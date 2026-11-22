@@ -1,0 +1,3717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assyrian Aid Relief Australia</title>
+<meta name="description" content="Assyrian Aid Relief Australia is a registered Australian charity supporting Assyrian families and communities in Iraq through education, healthcare, infrastructure and cultural preservation projects.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<template id="__bundler_thumbnail" data-bg-color="#EEF4FA">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1200" height="800" fill="#EEF4FA"/>
+    <!-- Dark right panel -->
+    <rect x="600" y="0" width="600" height="800" fill="#0D1A24"/>
+    <!-- Gold frame corners -->
+    <path d="M640,40 L640,80 M640,40 L680,40" stroke="#C8980A" stroke-width="3" fill="none"/>
+    <path d="M1160,760 L1160,720 M1160,760 L1120,760" stroke="#C8980A" stroke-width="3" fill="none"/>
+    <!-- Ishtar star simplified -->
+    <circle cx="900" cy="400" r="120" stroke="rgba(200,152,10,0.2)" stroke-width="1" fill="none"/>
+    <circle cx="900" cy="400" r="90" stroke="rgba(46,123,181,0.3)" stroke-width="1" stroke-dasharray="4 5" fill="none"/>
+    <polygon points="900,300 912,360 970,330 928,378 990,390 928,402 970,450 912,422 900,480 888,422 830,450 872,402 810,390 872,378 830,330 888,360" fill="rgba(200,152,10,0.15)" stroke="rgba(200,152,10,0.6)" stroke-width="1.5"/>
+    <circle cx="900" cy="400" r="18" fill="#0D1A24" stroke="rgba(200,152,10,0.8)" stroke-width="1.5"/>
+    <circle cx="900" cy="400" r="9" fill="rgba(200,152,10,0.8)"/>
+    <!-- Left side title lines -->
+    <rect x="80" y="200" width="300" height="8" rx="2" fill="#0D1A24" opacity="0.6"/>
+    <rect x="80" y="224" width="420" height="8" rx="2" fill="#0D1A24" opacity="0.6"/>
+    <rect x="80" y="248" width="260" height="8" rx="2" fill="#2E7BB5" opacity="0.7"/>
+    <rect x="80" y="296" width="380" height="4" rx="1" fill="#0D1A24" opacity="0.25"/>
+    <rect x="80" y="312" width="340" height="4" rx="1" fill="#0D1A24" opacity="0.25"/>
+    <!-- Buttons -->
+    <rect x="80" y="360" width="140" height="40" rx="2" fill="#8B1A1A"/>
+    <rect x="234" y="360" width="140" height="40" rx="2" fill="none" stroke="rgba(46,123,181,0.5)" stroke-width="1.5"/>
+    <!-- Nav bar -->
+    <rect x="0" y="0" width="1200" height="64" fill="rgba(255,255,255,0.97)"/>
+    <rect x="40" y="14" width="36" height="36" rx="18" fill="#EEF4FA"/>
+  </svg>
+</template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Sans+Syriac+Eastern:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #2E7BB5;
+    --accent-light: #5BA3D4;
+    --accent-pale: #D6EAF5;
+    --crimson: #8B1A1A;
+    --crimson-light: #B03030;
+    --forest: #3B6E3B;
+    --forest-light: #5A9A5A;
+    --deep: #0D1A24;
+    --dark: #122030;
+    --mid: #1E3548;
+    --parchment: #F4F8FC;
+    --cream: #EEF4FA;
+    --text: #0D1A24;
+    --text-soft: #2C4A60;
+    --gold: #C8980A;
+    --gold-light: #E5B52A;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── TEXTURE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMDAnIGhlaWdodD0nMzAwJz48ZmlsdGVyIGlkPSduJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC43NScgbnVtT2N0YXZlcz0nNCcgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSczMDAnIGhlaWdodD0nMzAwJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHk9JzAuMDMnLz48L3N2Zz4=");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 4rem;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(46,123,181,0.18);
+    transition: padding 0.3s;
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo img {
+    height: 72px;
+    width: auto;
+    display: block;
+    transition: transform 0.2s;
+  }
+
+  .nav-logo:hover img {
+    transform: scale(1.04);
+  }
+
+  .nav-logo span {
+    display: block;
+    font-size: 0.65rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    opacity: 0.7;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.4rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    text-decoration: none;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; left: 0;
+    width: 0; height: 1px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* ── Language toggle ── */
+  .lang-toggle {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid rgba(46,123,181,0.3);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-inline-start: 1.5rem;
+    flex-shrink: 0;
+  }
+  .lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 0.45rem 0.75rem;
+    color: var(--text-soft);
+    transition: background 0.2s, color 0.2s;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+  }
+  .lang-btn + .lang-btn { border-inline-start: 1px solid rgba(46,123,181,0.2); }
+  .lang-btn:hover { color: var(--accent); }
+  .lang-btn.active { background: var(--accent); color: #fff; }
+  .lang-btn[data-lang="syr"] { font-family: 'Noto Sans Syriac Eastern', sans-serif; font-size: 0.78rem; }
+  .lang-btn[data-lang="ar"] { font-family: 'Noto Naskh Arabic', serif; font-size: 0.78rem; }
+
+  /* ── RTL / translated-font overrides (scoped to translated elements) ── */
+  body.lang-ar [data-i18n], body.lang-ar [data-i18n] * {
+    font-family: 'Noto Naskh Arabic', serif !important;
+    letter-spacing: 0 !important;
+  }
+  body.lang-syr [data-i18n], body.lang-syr [data-i18n] * {
+    font-family: 'Noto Sans Syriac Eastern', 'Noto Naskh Arabic', serif !important;
+    letter-spacing: 0 !important;
+  }
+  body.lang-ar [data-i18n] em, body.lang-syr [data-i18n] em { font-style: normal; }
+  html[dir="rtl"] .nav-links a::after { left: auto; right: 0; }
+
+  .nav-donate {
+    background: var(--crimson);
+    color: #fff !important;
+    padding: 0.55rem 1.4rem;
+    border-radius: 2px;
+    font-weight: 600 !important;
+    transition: background 0.2s, transform 0.2s !important;
+  }
+
+  .nav-donate::after { display: none !important; }
+  .nav-donate:hover { background: var(--crimson-light) !important; color: #fff !important; transform: translateY(-1px); }
+
+  /* ── ORG STRUCTURE ── */
+  .org-structure { margin-top: 5.5rem; }
+  .org-tree { display: flex; flex-direction: column; align-items: center; margin-top: 2.5rem; }
+  .org-card {
+    background: rgba(255,255,255,0.5); border: 1px solid rgba(160,105,0,0.35);
+    border-radius: 3px; padding: 1rem 2.2rem; text-align: center; min-width: 190px;
+  }
+  .org-card.org-lead { border-color: rgba(160,105,0,0.7); background: rgba(160,105,0,0.07); }
+  .org-name {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 600;
+    color: var(--dark); line-height: 1.2;
+  }
+  .org-role {
+    font-family: 'Jost', sans-serif; font-size: 0.62rem; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: rgba(160,105,0,0.9);
+    margin-top: 0.35rem;
+  }
+  .org-stem { width: 1px; height: 1.6rem; background: rgba(160,105,0,0.45); }
+  .org-tier-wide .org-card { max-width: 240px; }
+  .org-photo {
+    width: 88px; height: 88px; border-radius: 50%; object-fit: cover; display: block;
+    margin: 0 auto 0.8rem; border: 2px solid rgba(160,105,0,0.5);
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.85), 0 6px 18px rgba(13,26,36,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .org-lead .org-photo { width: 108px; height: 108px; border-color: var(--gold); }
+  .org-card:hover .org-photo { transform: scale(1.05); box-shadow: 0 0 0 4px rgba(255,255,255,0.85), 0 10px 24px rgba(13,26,36,0.18); }
+  .org-photo-initial {
+    display: grid; place-items: center; background: var(--accent-pale);
+    font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 600; color: var(--accent);
+  }
+  .org-tier-wide {
+    position: relative; display: flex; justify-content: center; gap: 1.4rem;
+    flex-wrap: wrap; padding-top: 1.6rem; width: 100%;
+  }
+  .org-tier-wide::before {
+    content: ''; position: absolute; top: 0; left: 18%; right: 18%; height: 1px;
+    background: rgba(160,105,0,0.45);
+  }
+  .org-branch { position: relative; padding-top: 1.6rem; }
+  .org-branch::before {
+    content: ''; position: absolute; top: 0; left: 50%; width: 1px; height: 1.6rem;
+    background: rgba(160,105,0,0.45);
+  }
+  @media (max-width: 720px) {
+    .org-tier-wide::before, .org-branch::before { display: none; }
+    .org-branch { padding-top: 0; }
+    .org-tier-wide { padding-top: 0; gap: 1rem; }
+    .org-stem { height: 1rem; }
+  }
+
+  /* ── HERO PROJECTS + PARTNER ── */
+  .hero-projects { margin-top: 1.7rem; }
+  .hero-projects-label {
+    font-family: 'Jost', sans-serif; font-size: 0.62rem; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: rgba(160,105,0,0.85);
+    margin-bottom: 0.7rem;
+  }
+  .hero-projects-list {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-wrap: wrap; gap: 0.5rem 0.55rem; max-width: 500px;
+  }
+  .hero-projects-list li a {
+    display: inline-block; font-family: 'Jost', sans-serif; font-size: 0.78rem;
+    font-weight: 500; letter-spacing: 0.04em; color: var(--dark); text-decoration: none;
+    padding: 0.38rem 0.8rem; border: 1px solid rgba(160,105,0,0.35); border-radius: 2px;
+    background: rgba(160,105,0,0.05); transition: border-color 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+  .hero-projects-list li a:hover { border-color: rgba(160,105,0,0.7); background: rgba(160,105,0,0.12); }
+  .hero-partner {
+    display: flex; align-items: center; gap: 1rem; align-self: flex-start;
+    margin: 0; text-decoration: none;
+    padding: 0.95rem 1.4rem 0.95rem 1.15rem;
+    background: #fff; border: 1px solid rgba(160,105,0,0.4);
+    border-left: 3px solid var(--gold); border-radius: 3px;
+    box-shadow: 0 4px 16px rgba(13,26,36,0.07);
+    transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+  }
+  .hero-partner:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(13,26,36,0.12); border-color: rgba(160,105,0,0.75); }
+  .hero-partner-mark { width: 3.2rem; height: 3.2rem; flex: 0 0 auto; object-fit: contain; }
+  .hero-partner-body { display: flex; flex-direction: column; gap: 0.2rem; }
+  .hero-partner-label {
+    font-family: 'Jost', sans-serif; font-size: 0.58rem; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: rgba(160,105,0,0.95);
+  }
+  .hero-partner-name {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600;
+    color: var(--dark); line-height: 1.2; transition: color 0.2s;
+  }
+  .hero-partner-url {
+    font-family: 'Jost', sans-serif; font-size: 0.62rem; font-weight: 500;
+    letter-spacing: 0.1em; color: var(--accent);
+  }
+  .hero-partner:hover .hero-partner-name { color: var(--crimson); }
+
+  /* ── HERO UPCOMING PANEL ── */
+  .hero-upcoming { display: flex; flex-direction: column; gap: 0.7rem; width: 100%; margin: 0.9rem 0 1.3rem; }
+  .hero-upcoming-item {
+    display: block; text-decoration: none; text-align: left;
+    border: 1px solid rgba(160,105,0,0.32); border-radius: 3px;
+    background: rgba(255,255,255,0.35); padding: 0.85rem 1rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .hero-upcoming-item:hover { border-color: rgba(160,105,0,0.7); transform: translateY(-2px); }
+  .hero-upcoming-tag {
+    display: block; font-family: 'Jost', sans-serif; font-size: 0.56rem; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.3rem;
+  }
+  .hero-upcoming-title {
+    display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.12rem;
+    font-weight: 600; color: var(--dark); line-height: 1.25;
+  }
+  .hero-upcoming-date {
+    display: block; font-family: 'Jost', sans-serif; font-size: 0.7rem;
+    letter-spacing: 0.06em; color: rgba(13,26,36,0.6); margin-top: 0.25rem;
+  }
+  /* Featured upcoming event with flyer preview */
+  .hero-featured { display: flex; gap: 1rem; align-items: stretch; padding: 0.8rem; background: #fff; border-color: rgba(200,152,10,0.75); box-shadow: 0 8px 26px rgba(13,26,36,0.12); animation: featured-glow 3.2s ease-in-out infinite; }
+  @keyframes featured-glow { 0%,100% { box-shadow: 0 8px 26px rgba(13,26,36,0.12), 0 0 0 0 rgba(200,152,10,0); } 50% { box-shadow: 0 8px 26px rgba(13,26,36,0.12), 0 0 0 4px rgba(200,152,10,0.18); } }
+  .hero-flyer { position: relative; flex: 0 0 104px; aspect-ratio: 4 / 5; padding: 0; border: none; border-radius: 3px; overflow: hidden; cursor: zoom-in; background: var(--deep); box-shadow: 0 4px 14px rgba(13,26,36,0.25); }
+  .hero-flyer img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform 0.5s cubic-bezier(0.2,0.8,0.2,1); user-select: none; -webkit-user-drag: none; }
+  .hero-flyer:hover img, .hero-flyer:focus-visible img { transform: scale(1.07); }
+  .hero-flyer-zoom { position: absolute; left: 0; right: 0; bottom: 0; padding: 0.3rem 0; background: rgba(13,26,36,0.78); color: #fff; font-family: 'Jost', sans-serif; font-size: 0.55rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; text-align: center; }
+  .hero-featured-text { display: flex; flex-direction: column; justify-content: center; min-width: 0; text-decoration: none; }
+  .hero-featured-text .hero-upcoming-title { font-size: 1.22rem; }
+  .hero-featured-cta { display: inline-block; margin-top: 0.55rem; font-family: 'Jost', sans-serif; font-size: 0.66rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--crimson); }
+  .hero-featured-text:hover .hero-featured-cta { text-decoration: underline; }
+  @media (prefers-reduced-motion: reduce) { .hero-featured { animation: none; } }
+  @media (max-width: 420px) { .hero-flyer { flex-basis: 84px; } }
+
+  /* Upcoming project with photo preview */
+  .hero-project-text { display: block; text-decoration: none; }
+  .hero-project-thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin-top: 0.7rem; }
+  .hero-project-thumbs button { position: relative; padding: 0; border: none; border-radius: 2px; overflow: hidden; aspect-ratio: 4 / 3; cursor: zoom-in; background: var(--parchment); box-shadow: 0 2px 8px rgba(13,26,36,0.12); }
+  .hero-project-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.45s ease; user-select: none; -webkit-user-drag: none; }
+  .hero-project-thumbs button:hover img, .hero-project-thumbs button:focus-visible img { transform: scale(1.1); }
+  .hero-project-more { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(13,26,36,0.45); color: #fff; font-family: 'Jost', sans-serif; font-size: 0.56rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; transition: background 0.3s; }
+  .hero-project-thumbs button:hover .hero-project-more { background: rgba(13,26,36,0.3); }
+
+  .hero-upcoming-all {
+    align-self: center; font-family: 'Jost', sans-serif; font-size: 0.68rem; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase; color: rgba(160,105,0,0.9);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .hero-upcoming-all:hover { color: var(--crimson); }
+
+  /* ── ISHTAR LABEL ROW ── */
+  .ishtar-label-row {
+    display: flex; align-items: center; gap: 0.9rem; margin-bottom: 0.5rem;
+  }
+  .ishtar-label-line {
+    flex: 1; height: 1px;
+    background: linear-gradient(to right, transparent, rgba(160,105,0,0.45), transparent);
+  }
+  .ishtar-label-text {
+    font-family: 'Jost', sans-serif; font-size: 0.58rem; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: rgba(160,105,0,0.8); white-space: nowrap;
+  }
+
+  /* ── ISHTAR EMBLEM WRAP ── */
+  .ishtar-emblem-wrap { position: relative; display: flex; align-items: center; justify-content: center; }
+
+  .ishtar-zone { cursor: pointer; transition: filter 0.22s; }
+  .ishtar-zone:hover { filter: drop-shadow(0 0 10px rgba(160,105,0,0.65)); }
+
+  /* ── ISHTAR TOOLTIP ── */
+  .ishtar-tooltip {
+    position: absolute; left: 50%; bottom: calc(100% + 1.4rem);
+    transform: translateX(-50%) translateY(8px);
+    width: 270px; pointer-events: none; opacity: 0;
+    transition: opacity 0.22s ease, transform 0.22s ease; z-index: 20;
+  }
+  .ishtar-tooltip.visible {
+    opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto;
+  }
+  .ishtar-tooltip-inner {
+    background: var(--deep); border: 1px solid rgba(160,105,0,0.38);
+    border-radius: 3px; padding: 1.1rem 1.3rem;
+    box-shadow: 0 8px 32px rgba(13,26,36,0.22); position: relative;
+  }
+  .ishtar-tooltip-inner::after {
+    content: ''; position: absolute; bottom: -6px; left: 50%;
+    width: 10px; height: 10px; background: var(--deep);
+    border-right: 1px solid rgba(160,105,0,0.38);
+    border-bottom: 1px solid rgba(160,105,0,0.38);
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .ishtar-tooltip-title {
+    font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600;
+    color: rgba(200,140,0,0.95); letter-spacing: 0.06em; margin-bottom: 0.5rem;
+  }
+  .ishtar-tooltip-body {
+    font-family: 'Jost', sans-serif; font-size: 0.74rem; font-weight: 300;
+    color: rgba(255,255,255,0.62); line-height: 1.75;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+    background: var(--parchment);
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 5rem 6rem 7rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--dark);
+    margin-bottom: 0.3rem;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent);
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    max-width: 440px;
+    margin: 2rem 0 3rem;
+    line-height: 1.85;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  .hero-actions a { white-space: nowrap; }
+
+  .btn-primary {
+    background: var(--crimson);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .btn-primary:hover { background: var(--crimson-light); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(139,26,26,0.3); }
+  .btn-primary:hover::after { opacity: 1; }
+
+  .btn-secondary {
+    border: 1px solid rgba(46,123,181,0.45);
+    color: var(--accent);
+    padding: 1rem 2.5rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover { background: rgba(46,123,181,0.12); transform: translateY(-2px); border-color: var(--accent); }
+
+  /* ── HERO RIGHT ── */
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+    background: var(--parchment);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Vertical splitter between hero halves */
+  .hero-divider {
+    position: absolute;
+    left: 50%;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(200,152,10,0.35) 15%,
+      rgba(200,152,10,0.65) 40%,
+      rgba(200,152,10,0.65) 60%,
+      rgba(200,152,10,0.35) 85%,
+      transparent 100%
+    );
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  /* Diamond accent at centre of splitter */
+  .hero-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 8px; height: 8px;
+    background: var(--gold);
+    box-shadow: 0 0 0 1px rgba(200,152,10,0.4), 0 0 12px rgba(200,152,10,0.3);
+  }
+
+  /* Small tick marks */
+  .hero-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 18px; height: 18px;
+    border: 1px solid rgba(200,152,10,0.3);
+  }
+
+  /* Subtle diagonal line texture */
+  .hero-right::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 28px,
+      rgba(200,152,10,0.04) 28px,
+      rgba(200,152,10,0.04) 29px
+    );
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Outer gold frame */
+  .hero-panel-frame {
+    position: absolute;
+    inset: 3.5rem 3rem;
+    border: 1px solid rgba(200,152,10,0.22);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  /* Corner accents */
+  .hero-panel-frame::before,
+  .hero-panel-frame::after {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .hero-panel-frame::before {
+    top: -1px; left: -1px;
+    border-top: 2px solid var(--gold);
+    border-left: 2px solid var(--gold);
+  }
+
+  .hero-panel-frame::after {
+    bottom: -1px; right: -1px;
+    border-bottom: 2px solid var(--gold);
+    border-right: 2px solid var(--gold);
+  }
+
+  .hero-panel-inner {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem;
+  }
+
+  /* Static Ishtar emblem */
+  .hero-emblem {
+    width: 260px;
+    height: 260px;
+    opacity: 0.92;
+  }
+
+  .hero-panel-motto {
+    text-align: center;
+    color: rgba(13,26,36,0.72);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    text-shadow: none;
+  }
+
+  .hero-panel-year {
+    color: rgba(200,152,10,0.9);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -1.5rem;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+  }
+
+  /* Ripple keyframe */
+  @keyframes hero-ripple {
+    0%   { transform: translate(-50%, -50%) scale(0); opacity: 0.9; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+  }
+
+  .hero-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+    border: 2px solid rgba(200,152,10,0.9);
+    pointer-events: none;
+    animation: hero-ripple 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    z-index: 5;
+    box-shadow: 0 0 12px rgba(200,152,10,0.35), inset 0 0 12px rgba(200,152,10,0.15);
+  }
+
+  .hero-ripple.r2 {
+    width: 200px;
+    height: 200px;
+    border: 1.5px solid rgba(46,123,181,0.85);
+    box-shadow: 0 0 10px rgba(46,123,181,0.3), inset 0 0 8px rgba(46,123,181,0.15);
+    animation-duration: 1.0s;
+    animation-delay: 0.06s;
+    opacity: 0;
+  }
+
+  .hero-ripple.r3 {
+    width: 90px;
+    height: 90px;
+    border: 2px solid rgba(200,152,10,1);
+    box-shadow: 0 0 16px rgba(200,152,10,0.6), inset 0 0 10px rgba(200,152,10,0.25);
+    animation-duration: 0.7s;
+    animation-delay: 0.0s;
+  }
+
+  .hero-panel-inner {
+    transition: transform 0.08s ease-out;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  .hero-emblem {
+    transition: filter 0.6s ease, opacity 0.6s ease;
+  }
+
+  .hero-right:hover .hero-emblem {
+    filter: drop-shadow(0 0 28px rgba(200,152,10,0.38)) drop-shadow(0 0 8px rgba(46,123,181,0.2));
+    opacity: 1;
+  }
+
+  /* Frame corners subtly brighten on hover */
+  .hero-right:hover .hero-panel-frame::before,
+  .hero-right:hover .hero-panel-frame::after {
+    border-color: rgba(200,152,10,0.75);
+    transition: border-color 0.6s ease;
+  }
+
+  /* ── HERO SCROLL INDICATOR ── */
+  .hero-scroll {
+    position: absolute;
+    bottom: 3rem;
+    left: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-soft);
+    opacity: 0.5;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .hero-scroll::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 1px;
+    background: rgba(46,123,181,0.4);
+    animation: extend 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes extend { from { width: 2rem; } to { width: 5rem; } }
+
+  /* ── HERO FADEUP ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-left > * {
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-eyebrow { animation-delay: 0.1s; }
+  .hero h1 { animation-delay: 0.25s; }
+  .hero-subtitle { animation-delay: 0.4s; }
+  .hero-actions { animation-delay: 0.55s; }
+
+  .hero-logo-img {
+    opacity: 0;
+    animation: fadeUp 1s ease 0.5s forwards;
+  }
+
+  /* ── SCROLL REVEAL SYSTEM ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-left {
+    opacity: 0;
+    transform: translateX(-36px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(36px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .reveal-scale {
+    opacity: 0;
+    transform: scale(0.92);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Stagger delays */
+  .d1 { transition-delay: 0.08s; }
+  .d2 { transition-delay: 0.18s; }
+  .d3 { transition-delay: 0.28s; }
+  .d4 { transition-delay: 0.38s; }
+  .d5 { transition-delay: 0.48s; }
+  .d6 { transition-delay: 0.58s; }
+
+  /* ── ISHTAR DIVIDER ── */
+  .ishtar-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ishtar-divider::before,
+  .ishtar-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(46,123,181,0.25), transparent);
+    max-width: 300px;
+  }
+
+  .ishtar-svg {
+    width: 48px;
+    height: 48px;
+    margin: 0 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .ishtar-inner { animation: ring-cw 18s linear infinite; transform-origin: 24px 24px; }
+  .ishtar-outer { animation: ring-ccw 30s linear infinite; transform-origin: 24px 24px; }
+
+  /* ── SECTION BASE ── */
+  section { padding: 7rem 0; }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+
+  .section-label {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.6s ease;
+  }
+
+  .section-label.visible::before { width: 3rem; }
+
+  h2.display {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--dark);
+  }
+
+  h2.display em { font-style: italic; color: var(--crimson); }
+
+  /* ── WELCOME ── */
+  .welcome {
+    background: var(--accent-pale);
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0;
+  }
+
+  .welcome::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(46,123,181,0.08) 0%, transparent 55%);
+  }
+
+  /* Lamassu-inspired repeating border top */
+  .welcome::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--accent) 0px, var(--accent) 8px,
+      transparent 8px, transparent 12px,
+      var(--crimson) 12px, var(--crimson) 14px,
+      transparent 14px, transparent 18px
+    );
+    opacity: 0.5;
+  }
+
+  .welcome-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 4rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .welcome-inner .section-label { justify-content: center; }
+  .welcome-inner .section-label::before { display: none; }
+
+  .welcome-inner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .welcome-inner h2 em { font-style: italic; color: var(--accent); }
+
+  .welcome-inner p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.95;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── ANIMATED DIVIDER ── */
+  .divider-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+    color: var(--accent-light);
+    opacity: 0.6;
+  }
+
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    flex: 1;
+    max-width: 80px;
+    height: 1px;
+    background: var(--accent-light);
+  }
+
+  /* ── ABOUT ── */
+  .about { background: var(--parchment); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    align-items: start;
+  }
+
+  .about-left { padding-top: 1rem; }
+
+  .about-left p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+  }
+
+  .stat-row {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(46,123,181,0.2);
+  }
+
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+
+  .mission-block {
+    background: #ffffff;
+    padding: 3.5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(46,123,181,0.15);
+    box-shadow: 0 2px 12px rgba(46,123,181,0.06);
+    transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+  }
+
+  .mission-block:hover {
+    box-shadow: 0 8px 30px rgba(46,123,181,0.12);
+    border-color: rgba(46,123,181,0.3);
+    transform: translateY(-2px);
+  }
+
+  .mission-block::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 0%;
+    background: var(--crimson);
+    transition: height 0.6s ease;
+  }
+
+  .mission-block.visible::before { height: 100%; }
+
+  .mission-block .label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .mission-block p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--dark);
+    line-height: 1.65;
+  }
+
+  /* ── WHY ASSYRIAN-LED ── */
+  .why-section { background: var(--cream); }
+
+  .why-layout {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 7rem;
+    align-items: center;
+  }
+
+  .why-text p {
+    font-size: 1.03rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.9;
+    margin-bottom: 1.4rem;
+  }
+
+  .pull-quote {
+    background: var(--accent-pale);
+    padding: 3rem 3.5rem;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid rgba(46,123,181,0.18);
+    overflow: hidden;
+    transition: box-shadow 0.4s;
+  }
+
+  .pull-quote:hover { box-shadow: 0 8px 32px rgba(46,123,181,0.12); }
+
+  .pull-quote::before {
+    content: '\201C';
+    position: absolute;
+    top: -1rem;
+    left: 2.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem;
+    color: var(--accent-light);
+    opacity: 0.4;
+    line-height: 1;
+  }
+
+  /* Animated shimmer bar inside pull quote */
+  .pull-quote::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: -100%;
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-light), transparent);
+    animation: shimmer-slide 4s ease-in-out infinite;
+  }
+
+  @keyframes shimmer-slide {
+    0% { left: -60%; }
+    100% { left: 160%; }
+  }
+
+  .pull-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--dark);
+    line-height: 1.6;
+  }
+
+  /* ── WHAT WE DO ── */
+  .what-we-do {
+    background: var(--parchment);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .what-we-do::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 80% 20%, rgba(46,123,181,0.05) 0%, transparent 50%);
+  }
+
+  .what-header {
+    max-width: 600px;
+    margin-bottom: 5rem;
+  }
+
+  .what-header p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.9;
+    margin-top: 1.5rem;
+  }
+
+  .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .program-card {
+    background: #ffffff;
+    padding: 3rem 2.5rem;
+    border: 1px solid rgba(46,123,181,0.12);
+    border-radius: 4px;
+    transition: background 0.35s, border-color 0.35s, box-shadow 0.35s, transform 0.35s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Assyrian geometric corner ornament on hover */
+  .program-card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 0 28px 28px 0;
+    border-color: transparent var(--accent-pale) transparent transparent;
+    transition: border-width 0.3s ease;
+    opacity: 0;
+  }
+
+  .program-card:hover::before {
+    opacity: 1;
+    border-width: 0 42px 42px 0;
+  }
+
+  .program-card:hover {
+    background: var(--accent-pale);
+    border-color: rgba(46,123,181,0.3);
+    box-shadow: 0 8px 28px rgba(46,123,181,0.1);
+    transform: translateY(-4px);
+  }
+
+  .program-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-light);
+    opacity: 0.85;
+    transition: transform 0.4s ease, color 0.3s;
+  }
+
+  .program-card:hover .program-icon {
+    transform: scale(1.15) rotate(5deg);
+    color: var(--accent);
+    opacity: 1;
+  }
+
+  .program-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+
+  .program-card p {
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.85;
+  }
+
+  /* ── VALUES ── */
+  .values { background: var(--parchment); }
+
+  .values-intro {
+    max-width: 620px;
+    margin-bottom: 5rem;
+  }
+
+  .values-intro p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.9;
+    margin-top: 1.5rem;
+  }
+
+  .values-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border: 1px solid rgba(46,123,181,0.15);
+  }
+
+  .value-item {
+    padding: 3rem 3.5rem;
+    border-right: 1px solid rgba(46,123,181,0.15);
+    border-bottom: 1px solid rgba(46,123,181,0.15);
+    transition: background 0.35s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .value-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--crimson));
+    transition: width 0.5s ease;
+  }
+
+  .value-item:hover::after { width: 100%; }
+  .value-item:nth-child(even) { border-right: none; }
+  .value-item:nth-last-child(-n+2) { border-bottom: none; }
+  .value-item:hover { background: rgba(46,123,181,0.04); }
+
+  .value-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--accent);
+    opacity: 0.35;
+    line-height: 1;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s, transform 0.4s;
+  }
+
+  .value-item:hover .value-num { opacity: 0.6; transform: scale(1.05); }
+
+  .value-item h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+  }
+
+  .value-item p {
+    font-size: 0.93rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.85;
+  }
+
+  /* ── PARTNERSHIP ── */
+  .partnership { background: var(--cream); }
+
+  .partnership-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    align-items: center;
+  }
+
+  .partnership-text p {
+    font-size: 1.03rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.9;
+    margin-bottom: 1.4rem;
+  }
+
+  .partner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: #ffffff;
+    padding: 1.25rem 2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: 1px solid rgba(46,123,181,0.22);
+    box-shadow: 0 2px 8px rgba(46,123,181,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .partner-badge:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(46,123,181,0.14); }
+
+  .partner-badge-icon { width: 3.4rem; height: 3.4rem; object-fit: contain; flex: 0 0 auto; }
+
+  .partner-badge-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--dark);
+    line-height: 1.4;
+  }
+
+  .partner-badge-text span {
+    display: block;
+    color: var(--accent-light);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+  }
+
+  /* ── ANIMATED BRIDGE ── */
+  .bridge-visual {
+    background: #ffffff;
+    padding: 4rem;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid rgba(46,123,181,0.15);
+    box-shadow: 0 2px 12px rgba(46,123,181,0.06);
+  }
+
+  .bridge-countries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .bridge-country { text-align: center; }
+
+  .bridge-country-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 0.3rem;
+  }
+
+  .bridge-country-sub {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    opacity: 0.6;
+  }
+
+  .bridge-svg-wrap {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+  }
+
+  .bridge-svg-wrap svg {
+    width: 100%;
+    height: 40px;
+    overflow: visible;
+  }
+
+  .bridge-path-base {
+    stroke: rgba(46,123,181,0.2);
+    stroke-width: 1;
+    fill: none;
+  }
+
+  .bridge-dot {
+    r: 3;
+    fill: var(--accent);
+  }
+
+  .bridge-dot-1 { animation: flow-dot 3s ease-in-out infinite; }
+  .bridge-dot-2 { animation: flow-dot 3s ease-in-out 1s infinite; }
+  .bridge-dot-3 { animation: flow-dot 3s ease-in-out 2s infinite; }
+
+  @keyframes flow-dot {
+    0%   { opacity: 0; offset-distance: 0%;   }
+    8%   { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; offset-distance: 100%; }
+  }
+
+  .bridge-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-light);
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+  }
+
+  .bridge-desc {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.75;
+  }
+
+  /* ── VOLUNTEER ── */
+  .volunteer {
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .volunteer::after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(46,123,181,0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .volunteer-header {
+    max-width: 620px;
+    margin-bottom: 4rem;
+  }
+
+  .volunteer-header p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.9;
+    margin-top: 1.5rem;
+  }
+
+  .volunteer-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .volunteer-card {
+    padding: 3rem;
+    border: 1px solid rgba(46,123,181,0.15);
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(46,123,181,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .volunteer-card:hover { transform: translateY(-4px); box-shadow: 0 10px 32px rgba(46,123,181,0.1); }
+
+  .volunteer-card .tag {
+    display: inline-block;
+    background: rgba(139,26,26,0.08);
+    color: var(--crimson);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.8rem;
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+  }
+
+  .volunteer-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+
+  .volunteer-card p {
+    font-size: 0.93rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.85;
+  }
+
+  /* ── DONATE ── */
+  .donate-section {
+    background: linear-gradient(135deg, var(--accent-pale) 0%, #dceef8 50%, var(--accent-pale) 100%);
+    padding: 9rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .donate-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 30% 60%, rgba(139,26,26,0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 30%, rgba(46,123,181,0.07) 0%, transparent 50%);
+  }
+
+  /* Repeating Assyrian border bottom */
+  .donate-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--accent) 0px, var(--accent) 8px,
+      transparent 8px, transparent 12px,
+      var(--crimson) 12px, var(--crimson) 14px,
+      transparent 14px, transparent 18px
+    );
+    opacity: 0.4;
+  }
+
+  .donate-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 4rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .donate-inner .section-label { justify-content: center; }
+  .donate-inner .section-label::before { display: none; }
+
+  .donate-inner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    font-weight: 300;
+    color: var(--dark);
+    line-height: 1.15;
+    margin: 0.5rem 0 2rem;
+  }
+
+  .donate-inner h2 em { font-style: italic; color: var(--accent); }
+
+  .donate-inner p {
+    font-size: 1.08rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.95;
+    margin-bottom: 1.5rem;
+  }
+
+  .donate-inner > p:last-of-type { margin-bottom: 3rem; }
+
+  .donate-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .donate-promise {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: var(--text-soft);
+    opacity: 0.65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .donate-promise::before,
+  .donate-promise::after {
+    content: '✦';
+    color: var(--accent-light);
+    opacity: 0.5;
+  }
+
+  /* ── CLOSING ── */
+  .closing {
+    background: var(--parchment);
+    padding: 7rem 0;
+  }
+
+  .closing-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 4rem;
+  }
+
+  .closing-inner .section-label { justify-content: center; }
+  .closing-inner .section-label::before { display: none; }
+
+  .closing-inner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--dark);
+    line-height: 1.2;
+    margin: 0.5rem 0 2rem;
+  }
+
+  .closing-inner h2 em { font-style: italic; color: var(--crimson); }
+
+  .closing-inner p {
+    font-size: 1.03rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.95;
+    margin-bottom: 1.4rem;
+  }
+
+  /* Syriac/Aramaic text glow */
+  .syriac-glow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--accent);
+    animation: text-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes text-pulse {
+    0%, 100% { opacity: 1; text-shadow: 0 0 0px rgba(46,123,181,0); }
+    50% { opacity: 0.85; text-shadow: 0 0 18px rgba(46,123,181,0.3); }
+  }
+
+  /* ── ACNC BADGE ── */
+  .acnc-badge { display:inline-flex; align-items:center; gap:0.9rem; margin-top:1.75rem; padding:0.75rem 1.15rem; background:#fff; border-radius:10px; text-decoration:none; transition:background 0.2s, transform 0.2s; }
+  .acnc-badge img { width:76px; height:76px; display:block; }
+  .acnc-badge span { font-size:0.6rem; letter-spacing:0.16em; text-transform:uppercase; font-weight:600; color:#0f7b8a; line-height:1.6; max-width:8.5rem; }
+  .acnc-badge:hover { background:#f4f1ea; transform:translateY(-2px); }
+
+  /* ── HERO ACNC MARK ── */
+  .hero-trust { display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap; margin:1.4rem 0 2rem; }
+  .hero-trust .hero-partner { margin:0; }
+  .hero-acnc { display:inline-flex; align-items:center; gap:0.6rem; text-decoration:none; padding-left:1.25rem; border-left:1px solid rgba(160,105,0,0.28); }
+  .hero-acnc img { width:48px; height:48px; display:block; }
+  .hero-acnc span { font-family:'Jost',sans-serif; font-size:0.58rem; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#0f7b8a; line-height:1.6; max-width:6.5rem; }
+  .hero-acnc:hover span { color:#0a5d69; }
+  @media (max-width:520px){ .hero-acnc { padding-left:0; border-left:none; } }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--mid);
+    padding: 5rem 0 3rem;
+    border-top: 1px solid rgba(46,123,181,0.2);
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  .footer-brand h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-brand .sub {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(91,163,212,0.55);
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.8;
+    max-width: 340px;
+  }
+
+  .footer-col h4 {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 0.75rem; }
+
+  .footer-col ul li a {
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    transition: color 0.2s, padding-left 0.2s;
+  }
+
+  .footer-col ul li a:hover { color: var(--accent-light); padding-left: 4px; }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 4rem 0;
+    border-top: 1px solid rgba(46,123,181,0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.28);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── VOLUNTEER FORM ── */
+  .volunteer-form-section {
+    background: var(--parchment);
+    padding: 7rem 0;
+  }
+
+  .volunteer-form-section > .container > p {
+    font-size: 1.03rem;
+    font-weight: 300;
+    color: var(--text-soft);
+    line-height: 1.9;
+    max-width: 560px;
+    margin-bottom: 3rem;
+  }
+
+  .vf-form {
+    max-width: 660px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .vf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .vf-field.full { grid-column: 1 / -1; }
+
+  .vf-field label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+
+  .vf-field input,
+  .vf-field select,
+  .vf-field textarea {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--text);
+    background: #ffffff;
+    border: 1px solid rgba(46,123,181,0.25);
+    border-radius: 2px;
+    padding: 0.8rem 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+  }
+
+  .vf-field input:focus,
+  .vf-field select:focus,
+  .vf-field textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(46,123,181,0.1);
+  }
+
+  .vf-field textarea { resize: vertical; min-height: 120px; }
+  .vf-field select { appearance: none; cursor: pointer; }
+
+  .vf-submit {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .vf-note {
+    font-size: 0.8rem;
+    color: var(--text-soft);
+    opacity: 0.7;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    nav { padding: 1.2rem 2.5rem; }
+    .container { padding: 0 2.5rem; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 9rem 2.5rem 5rem; }
+    .hero-right { display: none; }
+    .about-grid, .why-layout, .partnership-inner, .volunteer-cards { grid-template-columns: 1fr; gap: 3rem; }
+    .programs-grid { grid-template-columns: 1fr 1fr; }
+    .values-list { grid-template-columns: 1fr; }
+    .value-item { border-right: none !important; }
+    .footer-inner { grid-template-columns: 1fr; gap: 3rem; }
+  }
+
+  @media (max-width: 640px) {
+    nav { padding: 1rem 1.5rem; }
+    .container { padding: 0 1.5rem; }
+    section { padding: 5rem 0; }
+    .hero-left { padding: 8rem 1.5rem 4rem; }
+    .programs-grid { grid-template-columns: 1fr; }
+    .hero-scroll { left: 1.5rem; }
+    .footer-inner, .footer-bottom { padding: 0 1.5rem; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    .vf-form { grid-template-columns: 1fr; }
+    .vf-field.full { grid-column: 1; }
+    .vf-submit { grid-column: 1; }
+  }
+
+  /* ── LIGHT THEME VARIANT ── */
+  .hero-right[data-theme="light"] {
+    background: #D6E8F2;
+  }
+
+  .hero-right[data-theme="light"]::before {
+    display: none;
+  }
+
+  .hero-right[data-theme="light"]::after {
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 28px,
+      rgba(30,80,130,0.04) 28px,
+      rgba(30,80,130,0.04) 29px
+    );
+  }
+
+  .hero-right[data-theme="light"] .hero-panel-frame {
+    border-color: rgba(30,80,140,0.25);
+  }
+
+  .hero-right[data-theme="light"] .hero-panel-frame::before {
+    border-color: rgba(30,80,140,0.55);
+  }
+
+  .hero-right[data-theme="light"] .hero-panel-frame::after {
+    border-color: rgba(30,80,140,0.55);
+  }
+
+  .hero-right[data-theme="light"] .hero-panel-motto {
+    color: rgba(13,26,48,0.78);
+    text-shadow: 0 1px 6px rgba(200,225,240,0.9);
+  }
+
+  .hero-right[data-theme="light"] .hero-panel-year {
+    color: rgba(30,80,140,0.85);
+    text-shadow: none;
+  }
+
+  .hero-right[data-theme="light"] .hero-emblem {
+    filter: saturate(0.9) brightness(0.72) hue-rotate(10deg);
+  }
+
+  .hero-right[data-theme="light"]:hover .hero-emblem {
+    filter: saturate(1.1) brightness(0.68) hue-rotate(10deg) drop-shadow(0 0 22px rgba(30,100,180,0.35)) drop-shadow(0 0 8px rgba(200,152,10,0.2));
+  }
+
+  .hero-right[data-theme="light"] .hero-ripple {
+    border-color: rgba(30,80,140,0.7);
+    box-shadow: 0 0 14px rgba(30,80,140,0.22), inset 0 0 10px rgba(30,80,140,0.1);
+  }
+
+  .hero-right[data-theme="light"] .hero-ripple.r2 {
+    border-color: rgba(200,152,10,0.65);
+    box-shadow: 0 0 10px rgba(200,152,10,0.2), inset 0 0 8px rgba(200,152,10,0.1);
+  }
+
+  .hero-right[data-theme="light"] .hero-ripple.r3 {
+    border-color: rgba(30,80,140,0.9);
+    box-shadow: 0 0 18px rgba(30,80,140,0.4), inset 0 0 10px rgba(30,80,140,0.2);
+  }
+
+  /* ── THEME TOGGLE ── */
+  .hero-theme-toggle {
+    position: absolute;
+    bottom: 2.2rem;
+    right: 2.5rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(200,152,10,0.3);
+    border-radius: 100px;
+    padding: 0.35rem 0.9rem 0.35rem 0.55rem;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+    backdrop-filter: blur(6px);
+    user-select: none;
+  }
+
+  .hero-theme-toggle:hover {
+    background: rgba(255,255,255,0.14);
+    border-color: rgba(200,152,10,0.6);
+  }
+
+  .hero-right[data-theme="light"] .hero-theme-toggle {
+    background: rgba(0,0,0,0.05);
+    border-color: rgba(30,80,140,0.3);
+  }
+
+  .toggle-knob {
+    width: 28px;
+    height: 16px;
+    border-radius: 100px;
+    background: rgba(200,152,10,0.25);
+    position: relative;
+    transition: background 0.3s;
+    flex-shrink: 0;
+  }
+
+  .toggle-knob::after {
+    content: '';
+    position: absolute;
+    top: 2px; left: 2px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: rgba(200,152,10,0.9);
+    transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), background 0.3s;
+  }
+
+  .hero-right[data-theme="light"] .toggle-knob {
+    background: rgba(30,80,140,0.2);
+  }
+
+  .hero-right[data-theme="light"] .toggle-knob::after {
+    transform: translateX(12px);
+    background: rgba(30,80,140,0.85);
+  }
+
+  .toggle-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(200,152,10,0.8);
+    transition: color 0.3s;
+  }
+
+  .hero-right[data-theme="light"] .toggle-label {
+    color: rgba(30,80,140,0.75);
+  }
+
+  /* ══ EVENTS SECTION ══ */
+  .events-section { background: var(--cream); padding: 7rem 0 5rem; }
+
+  .cal-wrapper {
+    background: #fff;
+    border: 1px solid rgba(46,123,181,0.12);
+    border-radius: 4px; overflow: hidden;
+    margin: 3rem 0 1rem;
+    box-shadow: 0 2px 24px rgba(13,26,36,0.07);
+  }
+  .cal-nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid rgba(46,123,181,0.1);
+    background: var(--parchment);
+  }
+  .cal-nav-btn {
+    background: none; border: 1px solid rgba(46,123,181,0.25);
+    width: 36px; height: 36px; border-radius: 2px; cursor: pointer;
+    color: var(--accent); font-size: 1rem;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .cal-nav-btn:hover { background: var(--accent); color: #fff; }
+  .cal-month-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; font-weight: 600;
+    color: var(--dark); letter-spacing: 0.04em;
+  }
+  .cal-days-row {
+    display: grid; grid-template-columns: repeat(7, 1fr);
+    padding: 0.8rem 1.2rem 0;
+  }
+  .cal-day-name {
+    text-align: center; font-size: 0.6rem; font-weight: 600;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--text-soft); padding: 0.4rem 0;
+  }
+  .cal-grid {
+    display: grid; grid-template-columns: repeat(7, 1fr);
+    padding: 0.4rem 1.2rem 1.5rem; gap: 2px;
+  }
+  .cal-cell {
+    min-height: 62px; padding: 0.45rem 0.5rem;
+    border-radius: 3px; transition: background 0.15s;
+  }
+  .cal-cell.other-month { opacity: 0.22; }
+  .cal-cell.today { background: rgba(46,123,181,0.07); }
+  .cal-cell.has-event { cursor: pointer; }
+  .cal-cell.has-event:hover { background: rgba(46,123,181,0.09); }
+  .cal-cell-num { font-size: 0.78rem; font-weight: 500; color: var(--text); line-height: 1; }
+  .cal-event-chip {
+    margin-top: 0.3rem; font-size: 0.56rem; font-weight: 600;
+    letter-spacing: 0.05em; padding: 0.15rem 0.35rem;
+    border-radius: 2px; line-height: 1.35;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    max-width: 100%; display: block;
+  }
+  .cal-event-chip.past { background: rgba(139,26,26,0.1); color: var(--crimson); }
+  .cal-event-chip.upcoming { background: rgba(46,123,181,0.11); color: var(--accent); }
+  .cal-legend { display: flex; gap: 1.5rem; margin-top: 0.8rem; flex-wrap: wrap; }
+  .cal-legend-item {
+    display: flex; align-items: center; gap: 0.45rem;
+    font-size: 0.63rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--text-soft);
+  }
+  .cal-legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .cal-legend-dot.past { background: var(--crimson); }
+  .cal-legend-dot.upcoming { background: var(--accent); }
+
+  /* Timeline */
+  .tl-section-head {
+    display: flex; align-items: center; gap: 1.2rem;
+    margin: 5rem 0 2.5rem;
+  }
+  .tl-section-head::after {
+    content: ''; flex: 1; height: 1px;
+    background: linear-gradient(to right, rgba(200,152,10,0.3), transparent);
+  }
+  .timeline-outer {
+    overflow-x: auto; padding-bottom: 1.5rem;
+    cursor: grab; -webkit-overflow-scrolling: touch;
+  }
+  .timeline-outer:active { cursor: grabbing; }
+  .timeline-outer::-webkit-scrollbar { height: 4px; }
+  .timeline-outer::-webkit-scrollbar-track { background: rgba(46,123,181,0.06); border-radius: 2px; }
+  .timeline-outer::-webkit-scrollbar-thumb { background: rgba(46,123,181,0.22); border-radius: 2px; }
+  .timeline-track {
+    display: flex; align-items: center;
+    min-width: max-content; padding: 4.5rem 3rem 1.5rem;
+    position: relative;
+  }
+  .timeline-track::before {
+    content: ''; position: absolute;
+    top: 50%; left: 3rem; right: 3rem; height: 1px;
+    background: linear-gradient(to right, rgba(200,152,10,0.35), rgba(46,123,181,0.35));
+    transform: translateY(-50%);
+  }
+  .tl-item {
+    display: flex; flex-direction: column;
+    align-items: center; width: 190px;
+    position: relative; flex-shrink: 0;
+  }
+  .tl-item:nth-child(even) { flex-direction: column-reverse; }
+  .tl-content {
+    background: #fff; border: 1px solid rgba(46,123,181,0.13);
+    border-radius: 3px; padding: 0.85rem 0.95rem;
+    width: 158px; margin-bottom: 0.9rem;
+    box-shadow: 0 2px 10px rgba(13,26,36,0.06);
+  }
+  .tl-item:nth-child(even) .tl-content { margin-bottom: 0; margin-top: 0.9rem; }
+  .tl-type {
+    font-size: 0.52rem; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 0.25rem;
+  }
+  .tl-type.fundraiser { color: var(--crimson); }
+  .tl-type.project { color: var(--forest); }
+  .tl-type.milestone { color: var(--gold); }
+  .tl-type.upcoming-tl { color: var(--accent); }
+  .tl-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.88rem; font-weight: 600; color: var(--dark); line-height: 1.3;
+  }
+  .tl-date-label { font-size: 0.58rem; font-weight: 500; letter-spacing: 0.1em; color: var(--text-soft); margin-top: 0.25rem; }
+  .tl-dot {
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 2px solid #fff; flex-shrink: 0; z-index: 1;
+  }
+  .tl-dot.fundraiser { background: var(--crimson); box-shadow: 0 0 0 1px var(--crimson); }
+  .tl-dot.project { background: var(--forest); box-shadow: 0 0 0 1px var(--forest); }
+  .tl-dot.milestone { background: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+  .tl-dot.upcoming-tl { background: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .tl-stem { width: 1px; height: 1.8rem; background: rgba(46,123,181,0.2); flex-shrink: 0; }
+
+  /* ══ PROJECTS SECTION ══ */
+  .projects-section { background: var(--parchment); padding: 7rem 0; }
+
+  .project-filters { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 2.5rem 0 3rem; }
+  .filter-btn {
+    font-family: 'Jost', sans-serif; font-size: 0.68rem; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 0.5rem 1.4rem; border-radius: 2px;
+    border: 1px solid rgba(13,26,36,0.18);
+    background: transparent; color: rgba(13,26,36,0.5);
+    cursor: pointer; transition: all 0.2s;
+  }
+  .filter-btn:hover { border-color: rgba(160,105,0,0.5); color: rgba(160,105,0,0.9); }
+  .filter-btn.active { background: rgba(160,105,0,0.1); border-color: rgba(160,105,0,0.6); color: rgba(160,105,0,1); }
+
+  .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
+  .project-card {
+    background: #fff;
+    border: 1px solid rgba(13,26,36,0.09);
+    border-radius: 3px; overflow: hidden;
+    box-shadow: 0 2px 12px rgba(13,26,36,0.05);
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  }
+  .project-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(13,26,36,0.12); border-color: rgba(160,105,0,0.35); }
+  .project-card.hidden { display: none; }
+
+  /* Project photo gallery */
+  .pc-gallery { padding: 1rem 1rem 0; }
+  .pc-cover { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; padding: 0; border: none; border-radius: 3px; overflow: hidden; cursor: zoom-in; background: var(--parchment); }
+  .pc-cover img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s cubic-bezier(0.2,0.8,0.2,1); }
+  .pc-cover:hover img, .pc-cover:focus-visible img { transform: scale(1.05); }
+  .pc-cover::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,26,36,0.55), transparent 45%); pointer-events: none; }
+  .pc-cover-count { position: absolute; left: 0.85rem; bottom: 0.75rem; z-index: 1; display: inline-flex; align-items: center; gap: 0.45rem; font-family: 'Jost', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; }
+  .pc-cover-count svg { width: 15px; height: 15px; }
+  .pc-thumbs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.4rem; margin-top: 0.4rem; }
+  .pc-thumb { padding: 0; border: none; border-radius: 2px; overflow: hidden; aspect-ratio: 4 / 3; cursor: zoom-in; background: var(--parchment); }
+  .pc-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease, opacity 0.3s; opacity: 0.88; }
+  .pc-thumb:hover img, .pc-thumb:focus-visible img { transform: scale(1.08); opacity: 1; }
+  .pc-gallery img { user-select: none; -webkit-user-drag: none; }
+  .pc-thumb { position: relative; }
+  .pc-thumb.is-video::after, .lb-strip button.is-video::after { content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-40%, -50%); border-style: solid; border-width: 7px 0 7px 11px; border-color: transparent transparent transparent #fff; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.6)); pointer-events: none; }
+  .lb-strip button { position: relative; }
+  .pc-thumb-more { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(13,26,36,0.62); color: #fff; font-family: 'Jost', sans-serif; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.04em; transition: background 0.3s; }
+  .pc-thumb:hover .pc-thumb-more { background: rgba(13,26,36,0.45); }
+  .lb-figure video { max-width: 100%; max-height: calc(100% - 2.5rem); border-radius: 3px; background: #000; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .lb-figure [hidden] { display: none !important; }
+
+  /* Lightbox */
+  .lightbox { position: fixed; inset: 0; z-index: 600; background: rgba(9,17,24,0.94); display: grid; grid-template-columns: 4rem 1fr 4rem; grid-template-rows: 1fr auto; align-items: center; padding: 3.5rem 1rem 1.25rem; opacity: 0; pointer-events: none; transition: opacity 0.25s; }
+  .lightbox.open { opacity: 1; pointer-events: all; }
+  .lb-figure { grid-column: 2; grid-row: 1; margin: 0; height: 100%; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.85rem; }
+  .lb-figure img { max-width: 100%; max-height: calc(100% - 2.5rem); object-fit: contain; border-radius: 3px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); user-select: none; -webkit-user-drag: none; transition: opacity 0.2s; }
+  .lb-figure figcaption { font-family: 'Jost', sans-serif; font-size: 0.82rem; color: rgba(255,255,255,0.75); text-align: center; }
+  .lb-figure figcaption b { color: var(--gold-light); font-weight: 600; margin-inline-end: 0.6rem; letter-spacing: 0.08em; }
+  .lb-nav, .lb-close { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 50%; cursor: pointer; transition: background 0.2s, border-color 0.2s; }
+  .lb-nav { width: 48px; height: 48px; font-size: 1.6rem; line-height: 1; justify-self: center; }
+  .lb-prev { grid-column: 1; grid-row: 1; }
+  .lb-next { grid-column: 3; grid-row: 1; }
+  .lb-nav:hover, .lb-close:hover { background: var(--accent); border-color: var(--accent); }
+  .lb-close { position: absolute; top: 1rem; inset-inline-end: 1rem; width: 44px; height: 44px; font-size: 1.5rem; line-height: 1; }
+  .lb-strip { grid-column: 1 / -1; grid-row: 2; display: flex; justify-content: center; gap: 0.5rem; margin-top: 1rem; overflow-x: auto; }
+  .lb-strip button { flex: 0 0 auto; width: 72px; height: 54px; padding: 0; border: 2px solid transparent; border-radius: 2px; overflow: hidden; cursor: pointer; opacity: 0.5; background: none; transition: opacity 0.2s, border-color 0.2s; }
+  .lb-strip button.active { opacity: 1; border-color: var(--gold); }
+  .lb-strip button:hover { opacity: 0.9; }
+  .lb-strip img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  @media (max-width: 640px) {
+    .lightbox { grid-template-columns: 1fr; padding: 3.5rem 0.75rem 1rem; }
+    .lb-nav { display: none; }
+    .lb-figure { grid-column: 1; }
+    .lb-strip button { width: 56px; height: 42px; }
+  }
+
+  .pc-top { height: 4px; }
+  .pc-top.completed { background: var(--forest); }
+  .pc-top.assigned { background: var(--accent); }
+  .pc-top.postponed { background: var(--gold); }
+  .pc-top.upcoming { background: var(--crimson); }
+  .pc-badge.upcoming { background: var(--crimson); color: #fff; border: 1px solid var(--crimson); }
+  .pc-funded-by { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 1.2rem; padding: 0.7rem 0.9rem; background: rgba(139,26,26,0.06); border-left: 2px solid var(--crimson); border-radius: 0 3px 3px 0; font-size: 0.82rem; color: var(--dark); text-decoration: none; transition: background 0.2s; }
+  .pc-funded-by:hover { background: rgba(139,26,26,0.11); }
+  .pc-funded-by strong { color: var(--crimson); font-weight: 600; }
+
+  .pc-body { padding: 1.8rem 2rem; }
+  .pc-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 0.6rem; }
+  .pc-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--dark); line-height: 1.25; }
+  .pc-badge { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.38rem 0.85rem; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
+  .pc-badge.completed { background: var(--forest); color: #fff; border: 1px solid var(--forest); }
+  .pc-badge.assigned { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+  .pc-badge.postponed { background: var(--gold); color: #fff; border: 1px solid var(--gold); }
+  .pc-location { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(160,105,0,0.85); margin-bottom: 1rem; }
+  .pc-description { font-size: 0.86rem; color: var(--text-soft); line-height: 1.75; margin-bottom: 1.2rem; }
+  .pc-meta { border-top: 1px solid rgba(13,26,36,0.08); padding-top: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .pc-meta-item label { display: block; font-size: 0.56rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(13,26,36,0.4); margin-bottom: 0.2rem; }
+  .pc-meta-item span { font-size: 0.8rem; color: rgba(13,26,36,0.75); }
+
+  /* Event Modal */
+  .event-modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(13,26,36,0.72); backdrop-filter: blur(4px);
+    z-index: 500; display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none; transition: opacity 0.25s;
+  }
+  .event-modal-overlay.open { opacity: 1; pointer-events: all; }
+  .event-modal-box {
+    background: #fff; max-width: 520px; width: 90%; border-radius: 4px; overflow: hidden;
+    transform: translateY(18px); transition: transform 0.3s;
+    box-shadow: 0 24px 60px rgba(13,26,36,0.28);
+    max-height: 90vh; overflow-y: auto;
+  }
+  .event-modal-overlay.open .event-modal-box { transform: translateY(0); }
+  .em-stripe { height: 5px; }
+  .em-flyer { display: block; background: var(--deep); cursor: zoom-in; }
+  .em-flyer[hidden] { display: none; }
+  .em-flyer img { display: block; width: 100%; height: auto; user-select: none; -webkit-user-drag: none; }
+  .em-flyer-hint { display: block; text-align: center; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.7); padding: 0.45rem 0; }
+  .em-stripe.past { background: var(--crimson); }
+  .em-stripe.upcoming { background: var(--accent); }
+  .em-body { padding: 2rem 2.2rem 2.2rem; }
+  .em-type { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.45rem; }
+  .em-type.past { color: var(--crimson); }
+  .em-type.upcoming { color: var(--accent); }
+  .em-title { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; font-weight: 600; color: var(--dark); line-height: 1.2; margin-bottom: 1.2rem; }
+  .em-details { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin-bottom: 1.3rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(46,123,181,0.1); }
+  .em-detail label { display: block; font-size: 0.56rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-soft); margin-bottom: 0.2rem; }
+  .em-detail span { font-size: 0.86rem; color: var(--dark); font-weight: 500; }
+  .em-desc { font-size: 0.86rem; color: var(--text-soft); line-height: 1.75; margin-bottom: 1.2rem; }
+  .em-highlights { margin-bottom: 1.2rem; }
+  .em-highlights h4 { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-soft); margin-bottom: 0.5rem; }
+  .em-highlights ul { list-style: none; padding: 0; }
+  .em-highlights li { font-size: 0.84rem; color: var(--text); padding: 0.28rem 0 0.28rem 1.1rem; position: relative; }
+  .em-highlights li::before { content: ''; position: absolute; left: 0; top: 0.62rem; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+  .em-outcome { background: rgba(46,123,181,0.06); border-left: 2px solid var(--accent); padding: 0.8rem 1rem; border-radius: 0 3px 3px 0; font-size: 0.84rem; color: var(--text); margin-bottom: 1.4rem; }
+  .em-close { display: block; width: 100%; text-align: center; background: none; border: 1px solid rgba(46,123,181,0.25); border-radius: 2px; padding: 0.65rem; font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); cursor: pointer; transition: all 0.2s; }
+  .em-close:hover { background: var(--accent); color: #fff; }
+
+  @media (max-width: 900px) {
+    .projects-grid { grid-template-columns: 1fr; }
+    .em-details { grid-template-columns: 1fr; }
+  }
+
+  /* ── TRANSPARENCY ── */
+  .transparency { background:#fff; }
+  .trans-grid { display:grid; grid-template-columns:1.35fr 1fr; gap:4rem; align-items:start; }
+  .trans-text p { margin-top:1.6rem; color:var(--text-soft); max-width:46ch; }
+  .trans-bars { margin-top:2.5rem; display:flex; flex-direction:column; gap:1.4rem; max-width:460px; }
+  .trans-bar-head { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; font-family:'Jost',sans-serif; font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-soft); margin-bottom:0.55rem; }
+  .trans-bar-head strong { font-size:1.15rem; letter-spacing:0; color:var(--dark); }
+  .trans-bar { height:10px; background:rgba(46,123,181,0.12); border-radius:6px; overflow:hidden; }
+  .trans-bar-fill { height:100%; border-radius:6px; }
+  .trans-bar-fill.projects { background:linear-gradient(90deg,var(--accent),var(--accent-light)); }
+  .trans-bar-fill.overheads { background:var(--gold); }
+  .trans-acnc { background:var(--parchment); border:1px solid rgba(46,123,181,0.16); border-radius:4px; padding:2rem; }
+  .acnc-panel { display:flex; align-items:center; gap:1.25rem; text-decoration:none; }
+  .acnc-panel img { width:96px; height:96px; flex:0 0 auto; }
+  .acnc-panel-text { display:flex; flex-direction:column; gap:0.35rem; }
+  .acnc-panel-text strong { font-family:'Jost',sans-serif; font-size:0.8rem; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--dark); }
+  .acnc-panel-text span { font-size:0.78rem; line-height:1.6; color:var(--text-soft); }
+  .acnc-panel:hover .acnc-panel-text strong { color:var(--accent); }
+  .acnc-panel-note { margin-top:1.5rem; padding-top:1.5rem; border-top:1px solid rgba(46,123,181,0.16); font-size:0.78rem; line-height:1.7; color:var(--text-soft); }
+
+  /* ── SCROLL TO TOP ── */
+  .to-top {
+    position:fixed; bottom:1.75rem; inset-inline-end:1.75rem; width:48px; height:48px;
+    display:grid; place-items:center; border-radius:50%; cursor:pointer; z-index:110;
+    background:var(--accent); color:#fff; border:none; box-shadow:0 6px 20px rgba(13,26,36,0.22);
+    opacity:0; visibility:hidden; transform:translateY(12px);
+    transition:opacity 0.3s, transform 0.3s, visibility 0.3s, background 0.25s;
+  }
+  .to-top.show { opacity:1; visibility:visible; transform:translateY(0); }
+  .to-top:hover { background:var(--dark); }
+  .to-top svg { width:18px; height:18px; }
+  body.nav-open .to-top { opacity:0; visibility:hidden; }
+
+  /* ── SISTER ORGANISATIONS ── */
+  .sister-orgs { margin-top: 2rem; }
+  .sister-orgs-label { font-family:'Jost',sans-serif; font-size:0.6rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--text-soft); margin-bottom:0.85rem; }
+  .sister-orgs-links { display:flex; flex-wrap:wrap; gap:0.75rem; }
+  .sister-orgs-links a { display:flex; flex-direction:column; gap:0.25rem; text-decoration:none; padding:0.85rem 1.15rem; border:1px solid rgba(46,123,181,0.28); border-radius:3px; background:#fff; transition:border-color 0.25s, transform 0.25s, box-shadow 0.25s; }
+  .sister-orgs-links a:hover { border-color:var(--accent); transform:translateY(-2px); box-shadow:0 6px 18px rgba(46,123,181,0.14); }
+  .sister-name { font-family:'Jost',sans-serif; font-size:0.82rem; font-weight:600; color:var(--dark); }
+  .sister-url { font-family:'Jost',sans-serif; font-size:0.65rem; letter-spacing:0.08em; color:var(--accent); }
+
+  /* ── TRUST STRIP ── */
+  .trust-strip { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; margin-top:1.9rem; }
+  .trust-strip-item { display:flex; align-items:center; gap:0.8rem; text-decoration:none; }
+  .trust-strip-item img { width:40px; height:40px; flex:0 0 auto; }
+  .trust-strip-item span { font-family:'Jost',sans-serif; font-size:0.6rem; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-soft); line-height:1.65; }
+  .trust-strip-item:hover span { color:var(--accent); }
+
+  /* ── SPONSORS CAROUSEL ── */
+  .sponsors { background:var(--parchment); border-top:1px solid rgba(46,123,181,0.12); border-bottom:1px solid rgba(46,123,181,0.12); padding:3.5rem 0; }
+  .sponsors-header { max-width:640px; margin-bottom:1.75rem; }
+  .sponsors-header p { margin-top:0.9rem; color:var(--text-soft); font-size:0.92rem; line-height:1.75; }
+  .sponsors-cta { margin-top:1.75rem; font-family:'Jost',sans-serif; font-size:0.85rem; color:var(--text-soft); display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .sponsor-carousel { position:relative; display:flex; align-items:center; gap:0.75rem; }
+  .sponsor-track { --sx:0px; display:flex; gap:1.25rem; overflow:hidden; padding:0.9rem 0 1.2rem; flex:1; min-width:0;
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 2.5%, #000 97.5%, transparent 100%);
+            mask-image:linear-gradient(90deg, transparent 0, #000 2.5%, #000 97.5%, transparent 100%); }
+  .sponsor-item { flex:0 0 calc((100% - 2 * 1.25rem) / 3); aspect-ratio:2 / 1; translate:var(--sx) 0; position:relative; overflow:hidden;
+    background:#fff; border:1px solid rgba(46,123,181,0.16); border-radius:4px; padding:0.9rem; box-sizing:border-box;
+    transition:transform 0.4s cubic-bezier(0.2,0.8,0.2,1), border-color 0.3s, box-shadow 0.4s, opacity 0.4s, filter 0.4s; }
+  /* Main sponsor emphasis */
+  .sponsor-item.sponsor-main { border:2px solid var(--gold); background:linear-gradient(180deg, #FFF8E6 0%, #fff 55%); padding-top:1.85rem; box-shadow:0 8px 24px rgba(200,152,10,0.22); }
+  .sponsor-item.sponsor-main::after { transform:scaleX(1); height:4px; background:linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); }
+  .sponsor-item.sponsor-main:hover { border-color:var(--gold); box-shadow:0 18px 40px rgba(200,152,10,0.32); }
+  .sponsor-badge { position:absolute; top:0; left:50%; transform:translateX(-50%); z-index:3; display:inline-flex; align-items:center; gap:0.35rem; padding:0.3rem 0.8rem; background:var(--gold-light); color:var(--deep); border-radius:0 0 4px 4px; font-family:'Jost',sans-serif; font-size:0.56rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; white-space:nowrap; pointer-events:none; }
+  .sponsor-badge svg { width:10px; height:10px; }
+  .sponsor-track:has(.sponsor-item:hover) .sponsor-item.sponsor-main:not(:hover) { opacity:0.75; filter:grayscale(0.3); }
+  .sponsor-item img { display:block; width:100%; height:100%; object-fit:contain; pointer-events:none; user-select:none; -webkit-user-select:none; -webkit-user-drag:none; }
+  /* gold underline that grows on hover */
+  .sponsor-item::after { content:''; position:absolute; left:0; right:0; bottom:0; height:3px; background:linear-gradient(90deg, var(--accent), var(--gold)); transform:scaleX(0); transform-origin:left; transition:transform 0.45s cubic-bezier(0.2,0.8,0.2,1); pointer-events:none; }
+  /* light sheen that sweeps across on hover */
+  .sponsor-item::before { content:''; position:absolute; top:0; bottom:0; left:-60%; width:45%; background:linear-gradient(105deg, transparent, rgba(255,255,255,0.75), transparent); transform:skewX(-18deg); opacity:0; pointer-events:none; z-index:2; }
+  .sponsor-item:hover { transform:translateY(-6px); border-color:rgba(200,152,10,0.55); box-shadow:0 16px 36px rgba(13,26,36,0.14), 0 0 0 1px rgba(200,152,10,0.2); }
+  .sponsor-item:hover::after { transform:scaleX(1); }
+  .sponsor-item:hover::before { opacity:1; animation:sponsor-sheen 0.9s ease forwards; }
+  @keyframes sponsor-sheen { from { left:-60%; } to { left:130%; } }
+  /* spotlight: dim the other logos while one is hovered */
+  .sponsor-track:has(.sponsor-item:hover) .sponsor-item:not(:hover) { opacity:0.5; filter:grayscale(0.7); }
+  @media (prefers-reduced-motion: reduce) { .sponsor-item:hover::before { animation:none; opacity:0; } }
+  .sponsor-arrow { flex:0 0 auto; width:44px; height:44px; border:1px solid rgba(46,123,181,0.3); background:#fff; color:var(--accent); font-size:1.4rem; line-height:1; border-radius:50%; cursor:pointer; transition:background 0.25s, color 0.25s, border-color 0.25s; }
+  .sponsor-arrow:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .sponsors-cta a { color:var(--accent); font-weight:600; text-decoration:none; border-bottom:1px solid rgba(46,123,181,0.4); }
+  .sponsors-cta a:hover { color:var(--dark); border-color:var(--dark); }
+
+  /* ══════════ MOBILE / TABLET ══════════ */
+  html, body { overflow-x: hidden; }
+  img, svg, video { max-width: 100%; }
+
+  /* Hamburger + drawer */
+  .nav-toggle {
+    display: none; width: 44px; height: 44px; margin-inline-start: 0.5rem;
+    background: none; border: 1px solid rgba(46,123,181,0.3); border-radius: 2px;
+    cursor: pointer; padding: 0; position: relative; flex-shrink: 0; z-index: 130;
+  }
+  .nav-toggle span {
+    position: absolute; left: 12px; right: 12px; height: 1.5px; background: var(--accent);
+    transition: transform 0.28s ease, opacity 0.2s ease; border-radius: 2px;
+  }
+  .nav-toggle span:nth-child(1) { top: 15px; }
+  .nav-toggle span:nth-child(2) { top: 21px; }
+  .nav-toggle span:nth-child(3) { top: 27px; }
+  body.nav-open .nav-toggle span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  body.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  .nav-backdrop {
+    position: fixed; inset: 0; background: rgba(13,26,36,0.45); backdrop-filter: blur(2px);
+    opacity: 0; pointer-events: none; transition: opacity 0.3s; z-index: 115;
+  }
+  body.nav-open .nav-backdrop { opacity: 1; pointer-events: all; }
+
+  @media (max-width: 900px) {
+    nav { padding: 0.85rem 1.5rem; }
+    .nav-logo img { height: 52px; }
+    .nav-toggle { display: block; }
+    .nav-toggle { margin-inline-start: auto; }
+    .lang-btn { padding: 0.55rem 0.7rem; font-size: 0.7rem; }
+
+    .nav-links {
+      position: fixed; top: 0; inset-inline-end: 0; height: 100dvh;
+      width: min(330px, 84vw); background: #fff;
+      border-inline-start: 1px solid rgba(46,123,181,0.18);
+      box-shadow: -12px 0 40px rgba(13,26,36,0.14);
+      flex-direction: column; align-items: stretch; gap: 0;
+      padding: 5.5rem 1.75rem 2.5rem; margin: 0;
+      overflow-y: auto; z-index: 120;
+      transform: translateX(110%); transition: transform 0.34s cubic-bezier(0.4,0,0.2,1);
+    }
+    html[dir="rtl"] .nav-links { transform: translateX(-110%); }
+    body.nav-open .nav-links, html[dir="rtl"] body.nav-open .nav-links { transform: translateX(0); }
+    .nav-links li { border-bottom: 1px solid rgba(46,123,181,0.1); }
+    .nav-links a {
+      display: block; padding: 1.05rem 0; font-size: 0.85rem; letter-spacing: 0.16em;
+      color: var(--dark);
+    }
+    .nav-links a::after { display: none; }
+    .nav-links .nav-donate {
+      margin-top: 1.5rem; text-align: center; background: var(--crimson); color: #fff;
+      border-radius: 2px; padding: 1.05rem 1rem;
+    }
+    .nav-links li:last-child { border-bottom: none; }
+
+    /* Hero */
+    .hero { min-height: 0; }
+    .hero-divider, .hero-scroll { display: none; }
+    .hero-left { padding: 7.5rem 1.75rem 3.5rem; }
+    .hero h1 { font-size: clamp(2.35rem, 9.5vw, 3.4rem); }
+    .hero-subtitle { margin: 1.5rem 0 2.25rem; font-size: 1rem; line-height: 1.75; }
+    .hero-right { display: flex; padding: 3.5rem 1.5rem; }
+    .hero-panel-inner { transform: none !important; width: 100%; }
+    .hero-trust { gap: 1rem; }
+    .hero-actions { gap: 0.85rem; }
+    .hero-actions a { flex: 1 1 auto; text-align: center; padding: 1.05rem 1.25rem; }
+
+    /* Spacing */
+    section { padding: 4.5rem 0; }
+    .about-grid { gap: 2.75rem; }
+    .why-layout, .partnership-inner { gap: 3rem; }
+    .what-header, .values-intro, .volunteer-header { margin-bottom: 2.75rem; }
+    .bridge-visual { padding: 1.75rem 1.25rem; }
+    .bridge-country-name { font-size: 1.3rem; }
+    .bridge-svg-wrap { margin: 0 0.5rem; }
+    .org-card { min-width: 0; width: 100%; padding: 0.9rem 1rem; }
+    .partner-badge { flex-wrap: wrap; }
+    .sponsor-arrow { display: none; }
+    .sponsor-track { gap: 1rem; }
+    .sponsor-item { flex-basis: calc((100% - 1rem) / 2); }
+    .sponsors { padding: 2.75rem 0; }
+    .trust-strip { margin-top: 1.5rem; gap: 1rem; }
+    .trust-strip-item span { font-size: 0.6rem; letter-spacing: 0.14em; }
+    .sponsors-header { margin-bottom: 1.5rem; }
+    .trans-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .trans-acnc { padding: 1.5rem; }
+    .acnc-panel img { width: 76px; height: 76px; }
+    .to-top { bottom: 1.1rem; inset-inline-end: 1.1rem; }
+
+    /* Calendar */
+    .cal-nav { padding: 1rem 1.1rem; }
+    .cal-month-label { font-size: 1.15rem; }
+    .cal-nav-btn { width: 42px; height: 42px; }
+    .cal-days-row { padding: 0.7rem 0.45rem 0; }
+    .cal-day-name { font-size: 0.5rem; letter-spacing: 0.04em; }
+    .cal-grid { padding: 0.3rem 0.45rem 1.1rem; gap: 1px; }
+    .cal-cell { min-height: 46px; padding: 0.3rem 0.15rem; text-align: center; }
+    .cal-cell-num { font-size: 0.72rem; }
+    .cal-event-chip {
+      width: 6px; height: 6px; padding: 0; margin: 0.3rem auto 0;
+      border-radius: 50%; overflow: hidden; text-indent: -999px;
+    }
+    .cal-event-chip.past { background: var(--crimson); }
+    .cal-event-chip.upcoming { background: var(--accent); }
+
+    /* Timeline + filters */
+    .timeline-track { padding: 4rem 1.5rem 1.5rem; }
+    .timeline-track::before { left: 1.5rem; right: 1.5rem; }
+    .filter-btn { padding: 0.65rem 1rem; }
+
+    /* Modal */
+    .event-modal-box { width: 92%; max-height: 88vh; overflow-y: auto; }
+
+    /* Forms + footer */
+    .vf-form input, .vf-form select, .vf-form textarea, .vf-submit { font-size: 1rem; min-height: 46px; }
+    .footer-inner { padding: 0 1.75rem; }
+    .acnc-badge { margin-top: 1.25rem; }
+  }
+
+  @media (max-width: 480px) {
+    .hero-left { padding: 7rem 1.35rem 3rem; }
+    .container { padding: 0 1.35rem; }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .hero-actions a { width: 100%; }
+    .hero-projects-list li a { font-size: 0.68rem; padding: 0.42rem 0.7rem; }
+    .bridge-countries { gap: 0.5rem; }
+    .bridge-country-name { font-size: 1.1rem; }
+    .bridge-country-sub { font-size: 0.58rem; letter-spacing: 0.08em; }
+    .partner-badge-text { font-size: 0.75rem; }
+    .donate-inner h2 { font-size: clamp(2rem, 9vw, 2.8rem); }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="images/logo.png" alt="Assyrian Aid Relief Australia">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about" data-i18n="nav-about">Who We Are</a></li>
+    <li><a href="#what-we-do" data-i18n="nav-work">Our Work</a></li>
+    <li><a href="#partnership" data-i18n="nav-partnership">Partnership</a></li>
+    <li><a href="#volunteer" data-i18n="nav-volunteer">Volunteer</a></li>
+    <li><a href="#events" data-i18n="nav-events">Events</a></li>
+    <li><a href="#projects" data-i18n="nav-projects">Projects</a></li>
+    <li><a href="https://www.paypal.com/donate/?hosted_button_id=SBBYFBHBCV8NQ" target="_blank" rel="noopener" class="nav-donate" data-i18n="nav-donate">Donate</a></li>
+  </ul>
+  <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow"></div>
+    <h1 data-i18n="hero-h1"><span style="color: rgb(0, 0, 0)">Assyrian Aid Relief Australia</span></h1>
+    <p class="hero-subtitle" data-i18n="hero-subtitle" style="font-weight: 500">We empower Assyrians in Iraq by mobilising our community, preserving our heritage, and funding vital projects through culturally focused engagement and fundraising.</p>
+    <div class="trust-strip">
+      <a class="trust-strip-item" href="https://www.acnc.gov.au/charity/charities" target="_blank" rel="noopener">
+        <img src="images/acnc-registered-charity.png" alt="ACNC Registered Charity" />
+        <span data-i18n="trust-strip-acnc">Registered Charity<br />Australian Charities &amp; Not-for-profits Commission</span>
+      </a>
+    </div>
+    <div class="hero-projects">
+      <div class="hero-projects-label" data-i18n="hero-proj-label">Our Projects</div>
+      <ul class="hero-projects-list">
+        <li><a href="#what-we-do" data-i18n="hero-proj-1">Assyrian School Education</a></li>
+        <li><a href="#what-we-do" data-i18n="hero-proj-2">Livelihood</a></li>
+        <li><a href="#what-we-do" data-i18n="hero-proj-3">Health &amp; Mobile Clinic Services</a></li>
+        <li><a href="#what-we-do" data-i18n="hero-proj-4">Infrastructure</a></li>
+        <li><a href="#what-we-do" data-i18n="hero-proj-5">Cultural Preservation</a></li>
+        <li><a href="#what-we-do" data-i18n="hero-proj-6">Humanitarian Aid</a></li>
+        <li><a href="#what-we-do" data-i18n="hero-proj-7">Community Support</a></li>
+      </ul>
+    </div>
+    <div class="hero-trust">
+      <a class="hero-partner" href="http://assyrianaidiraq.org/" target="_blank" rel="noopener">
+        <img class="hero-partner-mark" src="images/aasi-logo.png" alt="Assyrian Aid Society Iraq logo">
+        <span class="hero-partner-body">
+          <span class="hero-partner-label" data-i18n="hero-partner-label">Official Partner</span>
+          <span class="hero-partner-name" data-i18n="hero-partner-name">Assyrian Aid Society Iraq</span>
+          <span class="hero-partner-url">assyrianaidiraq.org</span>
+        </span>
+      </a>
+    </div>
+    <div class="hero-actions">
+      <a href="https://www.paypal.com/donate/?hosted_button_id=SBBYFBHBCV8NQ" target="_blank" rel="noopener" class="btn-primary" data-i18n="hero-btn-donate">Donate Now</a>
+      <a href="#about" class="btn-secondary" data-i18n="hero-btn-story">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-divider"></div>
+  <div class="hero-right">
+    <div class="hero-panel-frame"></div>
+    <div class="hero-panel-inner" style="transform: perspective(900px) rotateX(0deg) rotateY(0deg) scale(1);">
+      <div class="hero-panel-motto" style="font-size: 24px; font-weight: 700; margin: 0 0 1.25rem">Preserving Our Heritage.<br><em>Empowering Our People.</em></div>
+      <!-- Ishtar Star label -->
+      <div class="ishtar-label-row">
+        <span class="ishtar-label-line"></span>
+        <span class="ishtar-label-text" data-i18n="hero-panel-label">Upcoming Activities</span>
+        <span class="ishtar-label-line"></span>
+      </div>
+
+      <!-- Upcoming activities -->
+      <div class="hero-upcoming">
+        <div class="hero-upcoming-item hero-featured" data-gallery="brunch">
+          <button type="button" class="hero-flyer" data-index="0" aria-label="View the Christmas Brunch flyer"><img src="events/christmas-brunch-2026.jpg" alt="" draggable="false"><span class="hero-flyer-zoom">View flyer</span></button>
+          <a href="#events" class="hero-featured-text">
+            <span class="hero-upcoming-tag" data-i18n="hero-up1-tag">Upcoming Fundraiser</span>
+            <span class="hero-upcoming-title" data-i18n="hero-up1-title">Christmas Brunch — Mobile Clinic Fundraiser</span>
+            <span class="hero-upcoming-date" data-i18n="hero-up1-date">Saturday 28 November 2026 · 10:00am · Assyrian Sports &amp; Culture Club, Fairfield Heights</span>
+            <span class="hero-featured-cta">$15 entry · Live music by Wilson Eshay &rarr;</span>
+          </a>
+        </div>
+        <div class="hero-upcoming-item hero-project" data-gallery="clinic">
+          <a href="#projects" class="hero-project-text">
+            <span class="hero-upcoming-tag" data-i18n="hero-up2-tag">Upcoming Project</span>
+            <span class="hero-upcoming-title" data-i18n="hero-up2-title">Healthcare Mobile Clinic — Duhok Governorate</span>
+            <span class="hero-upcoming-date" data-i18n="hero-up2-date">Funded by our 28 November Christmas Brunch · 200–250 people</span>
+          </a>
+          <div class="hero-project-thumbs">
+            <button type="button" data-index="0" aria-label="View mobile clinic photo 1"><img src="projects/clinic/photo-1-thumb.jpg" alt="" draggable="false"></button>
+            <button type="button" data-index="1" aria-label="View mobile clinic photo 2"><img src="projects/clinic/photo-2-thumb.jpg" alt="" draggable="false"></button>
+            <button type="button" data-index="2" aria-label="View mobile clinic photo 3"><img src="projects/clinic/photo-3-thumb.jpg" alt="" draggable="false"></button>
+            <button type="button" data-index="3" aria-label="View all mobile clinic photos"><img src="projects/clinic/photo-4-thumb.jpg" alt="" draggable="false"><span class="hero-project-more">View all</span></button>
+          </div>
+        </div>
+        <a href="#events" class="hero-upcoming-all" data-i18n="hero-up-all">View all events &rarr;</a>
+      </div>
+
+      <div class="hero-panel-year" style="font-size: 15.88px">EST. AUSTRALIA · FOR OUR PEOPLE</div>
+    </div>
+  </div>
+  <div class="hero-scroll" data-i18n="hero-scroll">Scroll to explore</div>
+</section>
+
+<!-- SPONSORS -->
+<section class="sponsors" id="sponsors">
+  <div class="container">
+    <div class="sponsors-header reveal">
+      <div class="section-label" data-i18n="sponsors-label">Our Supporters</div>
+      <p data-i18n="sponsors-p">Our work is made possible by Assyrian businesses, community organisations, and partners across Australia who give their time, resources, and support.</p>
+    </div>
+    <div class="sponsor-carousel reveal">
+      <div class="sponsor-track" id="sponsorTrack">
+        <div class="sponsor-item sponsor-main"><span class="sponsor-badge"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.3l7.1-.7z"/></svg><span data-i18n="sponsor-main-badge">Main Sponsor</span></span><img src="images/sponsor-1.webp" alt="Assyrian Sports &amp; Cultural Club — Main Sponsor" draggable="false"></div>
+        <div class="sponsor-item"><img src="images/sponsor-2.webp" alt="Shayna's Patisserie" draggable="false"></div>
+        <div class="sponsor-item"><img src="images/sponsor-3.webp?v=2" alt="Reni's Carwash" draggable="false"></div>
+        <!-- repeated set so the loop never shows a gap -->
+        <div class="sponsor-item sponsor-main" aria-hidden="true"><span class="sponsor-badge"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.3l7.1-.7z"/></svg><span data-i18n="sponsor-main-badge">Main Sponsor</span></span><img src="images/sponsor-1.webp" alt="" draggable="false"></div>
+        <div class="sponsor-item" aria-hidden="true"><img src="images/sponsor-2.webp" alt="" draggable="false"></div>
+        <div class="sponsor-item" aria-hidden="true"><img src="images/sponsor-3.webp?v=2" alt="" draggable="false"></div>
+      </div>
+    </div>
+    <p class="sponsors-cta">
+      <span data-i18n="sponsors-cta">Interested in supporting our work as a sponsor?</span>
+      <a href="#volunteer" data-i18n="sponsors-cta-link">Get in touch</a>
+    </p>
+  </div>
+</section>
+
+<!-- WELCOME -->
+<div class="welcome" id="welcome">
+  <div class="welcome-inner">
+    <div class="section-label reveal" style="justify-content:center;" data-i18n="welcome-label">A Warm Welcome</div>
+    <h2 class="reveal d1" data-i18n="welcome-h2">You are among <em><span style="color: rgb(0, 0, 0)">family</span></em> here.</h2>
+
+    <!-- Animated Ishtar star divider -->
+    <div class="divider-ornament">
+      <svg class="ishtar-svg" viewBox="0 0 48 48" fill="none">
+        <!-- Outer points rotating CCW -->
+        <g class="ishtar-outer" style="transform-origin:24px 24px;">
+          <path d="M24 2 L26 18 L38 6 L28 20 L46 20 L30 26 L42 38 L26 30 L24 46 L22 30 L6 38 L18 26 L2 20 L20 20 L12 6 L22 18 Z"
+            stroke="rgba(46,123,181,0.3)" stroke-width="0.8" fill="none"/>
+        </g>
+        <!-- Inner star rotating CW -->
+        <g class="ishtar-inner" style="transform-origin:24px 24px;">
+          <path d="M24 10 L25.5 21 L34 14 L27 23 L38 24 L27 25 L34 34 L25.5 27 L24 38 L22.5 27 L14 34 L21 25 L10 24 L21 23 L14 14 L22.5 21 Z"
+            stroke="rgba(139,26,26,0.4)" stroke-width="0.8" fill="rgba(139,26,26,0.04)"/>
+        </g>
+        <!-- Centre dot -->
+        <circle cx="24" cy="24" r="3" fill="rgba(46,123,181,0.5)"/>
+        <circle cx="24" cy="24" r="1.5" fill="rgba(139,26,26,0.7)"/>
+      </svg>
+    </div>
+
+    <p class="reveal d2" data-i18n="welcome-p1">
+      Whether you were born in Australia and are reconnecting with your roots, or you arrived carrying the memories of a homeland left behind — you are welcome here. Assyrian Aid Relief Australia exists because our people have always cared for one another, across borders, across generations, and across every challenge history has placed before us.
+    </p>
+    <p class="reveal d3" data-i18n="welcome-p2">This is a place of action, of solidarity, and of deep respect for who we are as people. Together, we can ensure that the Assyrian story — one of extraordinary resilience and enduring culture — continues to be written with dignity, compassion, and hope.</p>
+    <p class="reveal d4" data-i18n="welcome-p3">
+      We are glad you are here.
+    </p>
+  </div>
+</div>
+
+<!-- ISHTAR DIVIDER -->
+<div class="ishtar-divider" style="background:var(--parchment);">
+  <svg class="ishtar-svg" viewBox="0 0 48 48" fill="none">
+    <g class="ishtar-outer" style="transform-origin:24px 24px;">
+      <path d="M24 4 L26 20 L38 8 L28 22 L44 24 L28 26 L38 40 L26 28 L24 44 L22 28 L10 40 L20 26 L4 24 L20 22 L10 8 L22 20 Z"
+        stroke="rgba(46,123,181,0.25)" stroke-width="0.8" fill="none"/>
+    </g>
+    <g class="ishtar-inner" style="transform-origin:24px 24px;">
+      <path d="M24 12 L25 20 L32 14 L26 22 L36 24 L26 26 L32 34 L25 28 L24 36 L23 28 L16 34 L22 26 L12 24 L22 22 L16 14 L23 20 Z"
+        stroke="rgba(139,26,26,0.3)" stroke-width="0.7" fill="rgba(139,26,26,0.03)"/>
+    </g>
+    <circle cx="24" cy="24" r="2.5" fill="rgba(46,123,181,0.4)"/>
+  </svg>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left reveal-left">
+        <div class="section-label" data-i18n="about-label">Who We Are</div>
+        <h2 class="display" data-i18n="about-h2">An Australian charity<br><em>with Assyrian heart.</em></h2>
+
+        <p style="margin-top:2rem;" data-i18n="about-p1">
+          Assyrian Aid Relief Australia (AAR) is an Australian-based charity supporting Assyrian families and communities to continue their way of life in our homeland Assyria, also known as Iraq. We exist because our people deserve dignified, effective support that comes from within our own community.
+        </p>
+        <p data-i18n="about-p2">
+          AAR was founded on a simple but powerful belief: that Assyrian-led aid is more than just aid. It is an act of cultural preservation. It is a statement that our people — one of the world's oldest continuous civilisations — will not be forgotten, will not be abandoned, and will not disappear.
+        </p>
+        <p data-i18n="about-p3">
+          We are rooted in Australia, but our reach extends to where our people need us most. Through fundraising events, community gatherings, donation campaigns, and a direct pipeline to on-the-ground support in Iraq, we translate the compassion of the Australian Assyrian community into real, lasting change.
+        </p>
+
+        <div class="stat-row">
+          <div class="stat reveal d1">
+            <div class="stat-num" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-label" data-i18n="stat-led">Assyrian-Led</div>
+          </div>
+          <div class="stat reveal d2">
+            <div class="stat-num" data-target="2" data-suffix="">2</div>
+            <div class="stat-label" data-i18n="stat-countries">Countries United</div>
+          </div>
+          <div class="stat reveal d3">
+            <div class="stat-num">∞</div>
+            <div class="stat-label" data-i18n="stat-heritage">Generations of Heritage</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <div class="mission-block reveal d1">
+          <div class="label" data-i18n="mission-label">Our Mission</div>
+          <p data-i18n="mission-p">Assyrian Aid Relief Australia exists to support Assyrian communities in Iraq through culturally grounded fundraising, regular giving, and meaningful community engagement. We unite our diaspora to preserve our heritage, strengthen community connections, and fund vital projects that uplift Assyrian families with dignity and hope.</p>
+        </div>
+        <div class="mission-block reveal d2">
+          <div class="label" data-i18n="vision-label">Our Vision</div>
+          <p data-i18n="vision-p">We envision a strong, connected global Assyrian community that actively supports the wellbeing, resilience, and future of Assyrians in Iraq. Through sustained giving, cultural pride, and united action, we aim to build a long‑term platform that empowers our people and preserves our heritage for generations to come.</p>
+        </div>
+        <div class="mission-block reveal d3">
+          <div class="label" data-i18n="history-label">Our History</div>
+          <p data-i18n="history-p">Founded as a small, community‑driven initiative, Assyrian Aid Relief Australia was created to provide a reliable and transparent way for Assyrians in Australia to support their homeland. Guided by a volunteer management committee, the organisation has grown through events, outreach, and the collective commitment of community members who share a deep sense of cultural responsibility.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="org-structure reveal">
+      <div class="section-label" style="justify-content:center;" data-i18n="org-label">Organisation Structure</div>
+      <div class="org-tree">
+        <div class="org-card org-lead">
+          <img class="org-photo" src="team/shoushan.jpg?v=3" alt="Shoushan Tower" draggable="false">
+          <div class="org-name">Shoushan Tower</div>
+          <div class="org-role" data-i18n="org-role-1">President</div>
+        </div>
+        <div class="org-stem"></div>
+        <div class="org-card">
+          <img class="org-photo" src="team/george.jpg?v=3" alt="George Adam" draggable="false">
+          <div class="org-name">George Adam</div>
+          <div class="org-role" data-i18n="org-role-vp">Vice President</div>
+        </div>
+        <div class="org-stem"></div>
+        <div class="org-tier-wide">
+          <div class="org-branch">
+            <div class="org-card">
+              <img class="org-photo" src="team/dyana.jpg?v=3" alt="Dyana Chewshin" draggable="false">
+              <div class="org-name">Dyana Chewshin</div>
+              <div class="org-role" data-i18n="org-role-sec">Secretary</div>
+            </div>
+          </div>
+          <div class="org-branch">
+            <div class="org-card">
+              <img class="org-photo" src="team/dadisho.jpg" alt="Dadisho Babana" draggable="false">
+              <div class="org-name">Dadisho Babana</div>
+              <div class="org-role" data-i18n="org-role-treasurer">Treasurer &amp; Social Media Manager</div>
+            </div>
+          </div>
+          <div class="org-branch">
+            <div class="org-card">
+              <img class="org-photo" src="team/shony.jpg?v=3" alt="Shony Toma" draggable="false">
+              <div class="org-name">Shony Toma</div>
+              <div class="org-role" data-i18n="org-role-pm">Project Manager</div>
+            </div>
+          </div>
+          <div class="org-branch">
+            <div class="org-card">
+              <img class="org-photo" src="team/janet.jpg?v=3" alt="Janet Shamoun" draggable="false">
+              <div class="org-name">Janet Shamoun</div>
+              <div class="org-role" data-i18n="org-role-5">Fundraising Officer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="what-we-do" id="what-we-do">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="what-header reveal">
+      <div class="section-label" data-i18n="prog-label">Our Programs</div>
+      <h2 class="display" data-i18n="prog-h2">What we <em>do</em></h2>
+      <p data-i18n="prog-intro">
+        Our work spans humanitarian aid, Assyrian education, healthcare, agriculture, livelihood, construction, cultural preservation, grassroots fundraising and community engagement — all driven by the Assyrian community, for the Assyrian community.
+      </p>
+    </div>
+
+    <div class="programs-grid">
+      <div class="program-card reveal d1">
+        <svg class="program-icon" viewBox="0 0 48 48" fill="none"><path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z" stroke="currentColor" stroke-width="1.5"/><path d="M16 28s2-4 8-4 8 4 8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="19" cy="21" r="2" fill="currentColor"/><circle cx="29" cy="21" r="2" fill="currentColor"/></svg>
+        <h3 data-i18n="prog1-h3">Humanitarian Relief</h3>
+        <p data-i18n="prog1-p">Providing direct support to Assyrian families facing displacement, poverty, and crisis — with essential aid that reaches communities in real need, particularly in Iraq.</p>
+      </div>
+      <div class="program-card reveal d2">
+        <svg class="program-icon" viewBox="0 0 48 48" fill="none"><path d="M8 36V18l16-10 16 10v18" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="18" y="26" width="12" height="10" stroke="currentColor" stroke-width="1.5"/><path d="M24 8v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <h3 data-i18n="prog2-h3">Community Support</h3>
+        <p data-i18n="prog2-p">Connecting displaced and vulnerable Assyrian individuals with support networks, practical resources, and the warmth of a community that understands their journey.</p>
+      </div>
+      <div class="program-card reveal d3">
+        <svg class="program-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="14" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M8 40c0-8.84 7.16-16 16-16s16 7.16 16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M32 22l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 data-i18n="prog3-h3">Cultural Preservation</h3>
+        <p data-i18n="prog3-p">Supporting initiatives that keep Assyrian language, traditions, art, and heritage alive — because cultural continuity is inseparable from the well-being of our people.</p>
+      </div>
+      <div class="program-card reveal d2">
+        <svg class="program-icon" viewBox="0 0 48 48" fill="none"><path d="M24 4l4 12h12l-9.5 7 3.5 12L24 28l-10 7 3.5-12L8 16h12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <h3 data-i18n="prog4-h3">Fundraising Events</h3>
+        <p data-i18n="prog4-p">Organising community gatherings, cultural events, and fundraising campaigns that bring Assyrians together and turn collective goodwill into tangible humanitarian impact.</p>
+      </div>
+      <div class="program-card reveal d3">
+        <svg class="program-icon" viewBox="0 0 48 48" fill="none"><path d="M6 24h4l6-14 8 28 6-18 4 10h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 data-i18n="prog5-h3">Transparent Reporting</h3>
+        <p data-i18n="prog5-p">Maintaining clear, honest communication with our donors and community — so you always know exactly how your generosity is being used and what difference it is making.</p>
+      </div>
+      <div class="program-card reveal d4">
+        <svg class="program-icon" viewBox="0 0 48 48" fill="none"><circle cx="16" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="20" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M4 40c0-6.63 5.37-12 12-12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M32 28c6.63 0 12 5.37 12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M20 32c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <h3 data-i18n="prog6-h3">Volunteer Mobilisation</h3>
+        <p data-i18n="prog6-p">Building a dedicated network of Assyrian volunteers — elders who carry deep wisdom, and young Assyrians who are rediscovering their identity through service to their community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERSHIP -->
+<section class="partnership" id="partnership">
+  <div class="container">
+    <div class="partnership-inner">
+      <div class="partnership-text reveal-left">
+        <div class="section-label" data-i18n="partner-label">Our Partnership</div>
+        <h2 class="display" data-i18n="partner-h2">A bridge between<br><em>two charities.</em></h2>
+
+        <p style="margin-top:2rem;" data-i18n="partner-p1">
+          One of the defining strengths of Assyrian Aid Relief Australia is our close working relationship with Assyrian Aid Society Iraq — a partnership that transforms donations raised here in Australia into direct, verifiable humanitarian action on the ground in Iraq.
+        </p>
+        <p data-i18n="partner-p2">
+          This is not a formal arrangement at arm's length. It is a genuine, community-to-community partnership built on shared identity, mutual trust, and a unified commitment to the welfare of Assyrian people wherever they are.
+        </p>
+        <p data-i18n="partner-p3">
+          Because our partner organisation operates within Iraq — embedded in the very communities we serve — we are able to ensure that support reaches families with speed, precision, and cultural sensitivity. We know who receives help. We know how it is used. And we can show you.
+        </p>
+        <p data-i18n="partner-p4">
+          This partnership is what makes AAR uniquely positioned as a channel for Assyrian philanthropy. When you donate through AAR, your generosity flows through trusted Assyrian hands, every step of the way.
+        </p>
+
+        <a class="partner-badge" href="http://assyrianaidiraq.org/" target="_blank" rel="noopener">
+          <img class="partner-badge-icon" src="images/aasi-logo.png" alt="Assyrian Aid Society Iraq logo">
+          <div class="partner-badge-text">
+            <span data-i18n="partner-badge-title">Official Partnership</span>
+            <span data-i18n="partner-badge-sub">Assyrian Aid Society Iraq</span>
+          </div>
+        </a>
+
+        <div class="sister-orgs">
+          <div class="sister-orgs-label" data-i18n="sister-label">Sister Organisations</div>
+          <div class="sister-orgs-links">
+            <a href="http://assyrianaidiraq.org/" target="_blank" rel="noopener">
+              <span class="sister-name" data-i18n="sister-iraq">Assyrian Aid Society — Iraq</span>
+              <span class="sister-url">assyrianaidiraq.org</span>
+            </a>
+            <a href="https://assyrianaid.org/" target="_blank" rel="noopener">
+              <span class="sister-name" data-i18n="sister-america">Assyrian Aid Society — America</span>
+              <span class="sister-url">assyrianaid.org</span>
+            </a>
+            <a href="https://assyrianaidcanada.org/" target="_blank" rel="noopener">
+              <span class="sister-name" data-i18n="sister-canada">Assyrian Aid Society — Canada</span>
+              <span class="sister-url">assyrianaidcanada.org</span>
+            </a>
+            <a href="https://www.instagram.com/assyrianaidsweden/" target="_blank" rel="noopener">
+              <span class="sister-name" data-i18n="sister-sweden">Assyrian Aid Society — Sweden</span>
+              <span class="sister-url">@assyrianaidsweden on Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="partnership-visual reveal-right">
+        <div class="bridge-visual">
+          <div class="bridge-countries">
+            <div class="bridge-country">
+              <div class="bridge-country-name" data-i18n="bridge-aus">Australia</div>
+              <div class="bridge-country-sub" data-i18n="bridge-aus-sub">Fundraising &amp; Community</div>
+            </div>
+
+            <!-- Animated SVG bridge with flowing particles -->
+            <div class="bridge-svg-wrap">
+              <svg viewBox="0 0 160 40" preserveAspectRatio="none">
+                <defs>
+                  <path id="flow-path" d="M 0 20 Q 80 5 160 20"/>
+                  <path id="flow-path-2" d="M 0 20 Q 80 35 160 20"/>
+                </defs>
+                <!-- Static base lines -->
+                <path d="M 0 20 Q 80 5 160 20" class="bridge-path-base" stroke="rgba(46,123,181,0.3)" stroke-width="0.8" fill="none"/>
+                <path d="M 0 20 Q 80 35 160 20" class="bridge-path-base" stroke="rgba(46,123,181,0.15)" stroke-width="0.8" fill="none"/>
+                <!-- Flowing dots top arc (Australia → Iraq) -->
+                <circle r="2.8" fill="#2E7BB5" opacity="0.9">
+                  <animateMotion dur="2.4s" repeatCount="indefinite" begin="0s">
+                    <mpath href="#flow-path"/>
+                  </animateMotion>
+                  <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite" begin="0s"/>
+                </circle>
+                <circle r="2.8" fill="#2E7BB5" opacity="0.9">
+                  <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.8s">
+                    <mpath href="#flow-path"/>
+                  </animateMotion>
+                  <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite" begin="0.8s"/>
+                </circle>
+                <circle r="2.8" fill="#2E7BB5" opacity="0.9">
+                  <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.6s">
+                    <mpath href="#flow-path"/>
+                  </animateMotion>
+                  <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite" begin="1.6s"/>
+                </circle>
+                <!-- Flowing dots bottom arc (smaller, Iraq → Australia) -->
+                <circle r="1.8" fill="#8B1A1A" opacity="0.6">
+                  <animateMotion dur="3.2s" repeatCount="indefinite" begin="0.4s" keyPoints="1;0" keyTimes="0;1" calcMode="linear">
+                    <mpath href="#flow-path-2"/>
+                  </animateMotion>
+                  <animate attributeName="opacity" values="0;0.6;0.6;0" dur="3.2s" repeatCount="indefinite" begin="0.4s"/>
+                </circle>
+                <circle r="1.8" fill="#8B1A1A" opacity="0.6">
+                  <animateMotion dur="3.2s" repeatCount="indefinite" begin="1.8s" keyPoints="1;0" keyTimes="0;1" calcMode="linear">
+                    <mpath href="#flow-path-2"/>
+                  </animateMotion>
+                  <animate attributeName="opacity" values="0;0.6;0.6;0" dur="3.2s" repeatCount="indefinite" begin="1.8s"/>
+                </circle>
+              </svg>
+              <span class="bridge-label" data-i18n="bridge-label">⟵ Aid Flows ⟶</span>
+            </div>
+
+            <div class="bridge-country">
+              <div class="bridge-country-name" data-i18n="bridge-iraq">Iraq</div>
+              <div class="bridge-country-sub" data-i18n="bridge-iraq-sub">On-Ground Delivery</div>
+            </div>
+          </div>
+          <p class="bridge-desc" data-i18n="bridge-desc">
+            Donations raised in Australia through AAR flow directly through our partnership with Assyrian Aid Society Iraq — ensuring every contribution supports verified, on-the-ground vital projects delivered within Assyrian communities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSPARENCY -->
+<section class="transparency" id="transparency">
+  <div class="container">
+    <div class="trans-grid">
+      <div class="trans-text reveal-left">
+        <div class="section-label" data-i18n="trans-label">Where Your Money Goes</div>
+        <h2 class="display" data-i18n="trans-h2">95 cents<br><em>in every dollar.</em></h2>
+        <p data-i18n="trans-p">Assyrian Aid Relief Australia is run almost entirely by volunteers. Ninety-five percent of every donation goes directly to funded projects on the ground in Assyria, with the remaining five percent covering unavoidable administration — banking and payment fees, insurance, and compliance.</p>
+        <div class="trans-bars">
+          <div class="trans-bar-row">
+            <div class="trans-bar-head"><span data-i18n="trans-bar1">Direct to projects</span><strong>95%</strong></div>
+            <div class="trans-bar"><div class="trans-bar-fill projects" style="width:95%"></div></div>
+          </div>
+          <div class="trans-bar-row">
+            <div class="trans-bar-head"><span data-i18n="trans-bar2">Administration &amp; compliance</span><strong>5%</strong></div>
+            <div class="trans-bar"><div class="trans-bar-fill overheads" style="width:5%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="trans-acnc reveal-right">
+        <a class="acnc-panel" href="https://www.acnc.gov.au/charity/charities" target="_blank" rel="noopener">
+          <img src="images/acnc-registered-charity.png" alt="ACNC Registered Charity" />
+          <div class="acnc-panel-text">
+            <strong data-i18n="acnc-panel-title">Registered Charity</strong>
+            <span data-i18n="acnc-panel-sub">Australian Charities and Not-for-profits Commission</span>
+          </div>
+        </a>
+        <p class="acnc-panel-note" data-i18n="acnc-panel-note">Our registration and annual reporting are publicly viewable on the ACNC Charity Register.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOLUNTEER -->
+<section class="volunteer" id="volunteer">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="volunteer-header reveal">
+      <div class="section-label" data-i18n="vol-label">Get Involved</div>
+      <h2 class="display" data-i18n="vol-h2">Your community<br><em>needs you.</em></h2>
+      <p data-i18n="vol-intro">
+        Volunteering with Assyrian Aid Relief Australia is one of the most meaningful ways to live out your Assyrian identity. Whether you have decades of experience or are just beginning to reconnect with your heritage, there is a place for you here.
+      </p>
+    </div>
+
+    <div class="volunteer-cards">
+      <div class="volunteer-card reveal d1">
+        <div class="tag" data-i18n="vol-tag1">For our elders</div>
+        <h3 data-i18n="vol-h3-1">Carry your wisdom forward.</h3>
+        <p data-i18n="vol-p1">
+          You have lived through history that younger generations can only read about. Your experience, your language, your stories — these are irreplaceable gifts to our community. As a volunteer, your wisdom shapes how we work, who we reach, and what we stand for. We need your guidance, your cultural knowledge, and your steady presence.
+        </p>
+      </div>
+      <div class="volunteer-card reveal d2">
+        <div class="tag" data-i18n="vol-tag2">For younger Assyrians</div>
+        <h3 data-i18n="vol-h3-2">Reclaim your roots through service.</h3>
+        <p data-i18n="vol-p2">
+          If you are a young Assyrian who feels the pull of your heritage but isn't sure how to honour it — this is your invitation. Volunteering with AAR is how you turn that feeling into action. You will work alongside people who share your background, contribute to causes that matter deeply, and discover what it means to be Assyrian through the most powerful lens there is: giving back.
+        </p>
+      </div>
+    </div>
+
+    <a href="#volunteer-form" class="btn-primary reveal d3" data-i18n="vol-cta">Join as a Volunteer</a>
+  </div>
+</section>
+
+<!-- VOLUNTEER FORM -->
+<section class="volunteer-form-section" id="volunteer-form">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="vf-label">Volunteer Application</div>
+    <h2 class="display reveal d1" data-i18n="vf-h2">Tell us about<br><em>yourself.</em></h2>
+    <p class="reveal d2" data-i18n="vf-intro">Fill in the form below and our team will be in touch. Whether you have an hour a month or much more to give, we would love to hear from you.</p>
+
+    <form class="vf-form reveal d3" action="https://formspree.io/f/mzdjnaao" method="POST">
+      <div class="vf-field">
+        <label for="vf-first" data-i18n="vf-first-label">First Name</label>
+        <input type="text" id="vf-first" name="first_name" required placeholder="e.g. Mary">
+      </div>
+      <div class="vf-field">
+        <label for="vf-last" data-i18n="vf-last-label">Last Name</label>
+        <input type="text" id="vf-last" name="last_name" required placeholder="e.g. Youkhana">
+      </div>
+      <div class="vf-field">
+        <label for="vf-email" data-i18n="vf-email-label">Email Address</label>
+        <input type="email" id="vf-email" name="email" required placeholder="you@example.com">
+      </div>
+      <div class="vf-field">
+        <label for="vf-phone" data-i18n="vf-phone-label">Phone Number</label>
+        <input type="tel" id="vf-phone" name="phone" placeholder="Optional">
+      </div>
+      <div class="vf-field full">
+        <label for="vf-location" data-i18n="vf-location-label">City / State</label>
+        <input type="text" id="vf-location" name="location" placeholder="e.g. Sydney, NSW">
+      </div>
+      <div class="vf-field full">
+        <label for="vf-message" data-i18n="vf-msg-label">How would you like to help?</label>
+        <textarea id="vf-message" name="message" placeholder="Tell us about your skills, availability, or any areas you're passionate about…"></textarea>
+      </div>
+      <div class="vf-submit">
+        <button type="submit" class="btn-primary" data-i18n="vf-submit-btn">Submit Application</button>
+        <span class="vf-note" data-i18n="vf-note">We'll respond within a few days.</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events-section" id="events">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="events-label">Community Events</div>
+    <h2 class="display reveal d1" data-i18n="events-h2">Bringing our <em>community together</em></h2>
+    <p class="reveal d2" style="max-width:560px;color:var(--text-soft);margin-top:1.2rem;font-size:1rem;line-height:1.8;" data-i18n="events-intro">Every gathering is an act of solidarity. View our upcoming events and browse the full history of our fundraisers and milestones below.</p>
+
+    <!-- Calendar -->
+    <div class="cal-wrapper reveal d3">
+      <div class="cal-nav">
+        <button class="cal-nav-btn" id="calPrev">&#8592;</button>
+        <div class="cal-month-label" id="calMonthLabel"></div>
+        <button class="cal-nav-btn" id="calNext">&#8594;</button>
+      </div>
+      <div class="cal-days-row">
+        <div class="cal-day-name">Sun</div><div class="cal-day-name">Mon</div>
+        <div class="cal-day-name">Tue</div><div class="cal-day-name">Wed</div>
+        <div class="cal-day-name">Thu</div><div class="cal-day-name">Fri</div>
+        <div class="cal-day-name">Sat</div>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+    </div>
+    <div class="cal-legend reveal">
+      <div class="cal-legend-item"><div class="cal-legend-dot past"></div>Past event</div>
+      <div class="cal-legend-item"><div class="cal-legend-dot upcoming"></div>Upcoming event</div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT MODAL -->
+<div class="event-modal-overlay" id="eventModal">
+  <div class="event-modal-box">
+    <a class="em-flyer" id="emFlyer" href="#" target="_blank" rel="noopener" hidden><img id="emFlyerImg" alt="" draggable="false"><span class="em-flyer-hint">Open full-size flyer</span></a>
+    <div class="em-stripe" id="emStripe"></div>
+    <div class="em-body">
+      <div class="em-type" id="emType"></div>
+      <div class="em-title" id="emTitle"></div>
+      <div class="em-details" id="emDetails"></div>
+      <div class="em-desc" id="emDesc"></div>
+      <div class="em-highlights" id="emHighlights"></div>
+      <div class="em-outcome" id="emOutcome"></div>
+      <button class="em-close" id="emClose">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section class="projects-section" id="projects">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="proj-label">Funded Projects</div>
+    <h2 class="display reveal d1" data-i18n="proj-h2">Making a <em>real difference</em></h2>
+    <p class="reveal d2" style="max-width:560px;color:var(--text-soft);margin-top:1.2rem;font-size:1rem;line-height:1.8;" data-i18n="proj-intro">Every project is a commitment to our people. Track the status of each initiative from allocation through to completion.</p>
+
+    <div class="project-filters reveal d3">
+      <button class="filter-btn active" data-filter="all" data-i18n="proj-filter-all">All Projects</button>
+      <button class="filter-btn" data-filter="completed" data-i18n="proj-filter-done">Completed</button>
+      <button class="filter-btn" data-filter="in-progress">In Progress</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+<div class="project-card reveal" data-status="in-progress"><div class="pc-top assigned"></div><div class="pc-gallery" data-gallery="clinic"><button type="button" class="pc-cover" data-index="0" aria-label="Open photo gallery for the Healthcare Mobile Clinic (4 photos)"><img src="projects/clinic/photo-1.jpg" alt="" loading="lazy" draggable="false"><span class="pc-cover-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>4 photos</span></button><div class="pc-thumbs" style="grid-template-columns: repeat(3, 1fr)"><button type="button" class="pc-thumb" data-index="1" aria-label="View photo 2"><img src="projects/clinic/photo-2-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="2" aria-label="View photo 3"><img src="projects/clinic/photo-3-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="3" aria-label="View photo 4"><img src="projects/clinic/photo-4-thumb.jpg" alt="" loading="lazy" draggable="false"></button></div></div><div class="pc-body"><div class="pc-header"><div class="pc-title">Healthcare Mobile Clinic — Medical Care for People in Need in Duhok Governorate</div><div class="pc-badge assigned">In Progress</div></div><div class="pc-location">Duhok Governorate, Iraq</div><div class="pc-description">Rural and underserved areas face limited access to health centres, diagnostic services and essential medications. Through its mobile clinic, the Assyrian Aid Society provides basic healthcare services and essential medicines to people in need in remote villages. This project will support half a month of mobile clinic activities, providing medical care and necessary medications to underserved communities in Duhok Governorate.</div><a class="pc-funded-by" href="#events"><span>Funded by our <strong>Christmas Brunch</strong> · Saturday 28 November 2026</span></a><div class="pc-meta"><div class="pc-meta-item"><label>Category</label><span>Health &amp; Mobile Clinic Services</span></div><div class="pc-meta-item"><label>Beneficiaries</label><span>200–250 individuals</span></div></div></div></div>
+<div class="project-card reveal" data-status="completed"><div class="pc-top completed"></div><div class="pc-gallery" data-gallery="schools"><button type="button" class="pc-cover" data-index="0" aria-label="Open photo gallery for Essential Materials for Assyrian Education Schools (17 photos)"><img src="projects/schools/photo-1.jpg" alt="" loading="lazy" draggable="false" style="object-position: 50% 60%"><span class="pc-cover-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>17 photos</span></button><div class="pc-thumbs"><button type="button" class="pc-thumb" data-index="1" aria-label="View photo 2"><img src="projects/schools/photo-2-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="2" aria-label="View photo 3"><img src="projects/schools/photo-3-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="3" aria-label="View photo 4"><img src="projects/schools/photo-4-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="4" aria-label="View photo 5"><img src="projects/schools/photo-5-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="5" aria-label="View all 17 photos"><img src="projects/schools/photo-6-thumb.jpg" alt="" loading="lazy" draggable="false"><span class="pc-thumb-more">+12</span></button></div></div><div class="pc-body"><div class="pc-header"><div class="pc-title">Essential Materials for Assyrian Education Schools</div><div class="pc-badge completed">Completed</div></div><div class="pc-location">Duhok &amp; Erbil Governorates, Iraq</div><div class="pc-description">Assyrian schools often lack basic supplies due to insufficient government funding. This project supplied A4 paper and whiteboard markers so schools across Duhok and Erbil could run exams and daily lessons smoothly.</div><div class="pc-meta"><div class="pc-meta-item"><label>Category</label><span>Education</span></div><div class="pc-meta-item"><label>Completed</label><span>April 2025</span></div><div class="pc-meta-item"><label>Beneficiaries</label><span>24 Assyrian education schools</span></div></div></div></div>
+<div class="project-card reveal d1" data-status="completed"><div class="pc-top completed"></div><div class="pc-gallery" data-gallery="dooreh"><button type="button" class="pc-cover" data-index="0" aria-label="Open photo gallery for Dooreh Village Generator Maintenance (6 photos)"><img src="projects/dooreh-1.jpg" alt="" loading="lazy" draggable="false"><span class="pc-cover-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>6 photos</span></button><div class="pc-thumbs"><button type="button" class="pc-thumb" data-index="1" aria-label="View photo 2"><img src="projects/dooreh-2-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="2" aria-label="View photo 3"><img src="projects/dooreh-3-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="3" aria-label="View photo 4"><img src="projects/dooreh-4-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="4" aria-label="View photo 5"><img src="projects/dooreh-5-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="5" aria-label="View photo 6"><img src="projects/dooreh-6-thumb.jpg" alt="" loading="lazy" draggable="false"></button></div></div><div class="pc-body"><div class="pc-header"><div class="pc-title">Dooreh Village Generator Maintenance</div><div class="pc-badge completed">Completed</div></div><div class="pc-location">Dooreh Village, Barwar Region, Iraq</div><div class="pc-description">Mechanical and electrical repairs, replacement parts and routine servicing restored the community generator that powers Dooreh Village when public electricity is unavailable.</div><div class="pc-meta"><div class="pc-meta-item"><label>Category</label><span>Livelihood &amp; Employment</span></div><div class="pc-meta-item"><label>Completed</label><span>November 2025</span></div><div class="pc-meta-item"><label>Beneficiaries</label><span>35 families</span></div></div></div></div>
+<div class="project-card reveal d2" data-status="completed"><div class="pc-top completed"></div><div class="pc-gallery" data-gallery="sorka"><button type="button" class="pc-cover" data-index="0" aria-label="Open photo and video gallery for Chairs &amp; Tables for Sorka Village Community Hall (5 photos, 1 video)"><img src="projects/sorka/photo-1.jpg" alt="" loading="lazy" draggable="false" style="object-position: 50% 35%"><span class="pc-cover-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>5 photos · 1 video</span></button><div class="pc-thumbs"><button type="button" class="pc-thumb" data-index="1" aria-label="View photo 2"><img src="projects/sorka/photo-2-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="2" aria-label="View photo 3"><img src="projects/sorka/photo-3-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="3" aria-label="View photo 4"><img src="projects/sorka/photo-4-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="4" aria-label="View photo 5"><img src="projects/sorka/photo-5-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb is-video" data-index="5" aria-label="Play video"><img src="projects/sorka/video-1-thumb.jpg" alt="" loading="lazy" draggable="false"></button></div></div><div class="pc-body"><div class="pc-header"><div class="pc-title">Chairs &amp; Tables for Sorka Village Community Hall</div><div class="pc-badge completed">Completed</div></div><div class="pc-location">Sorka Village, Iraq</div><div class="pc-description">Supplied furniture for the community hall in Sorka Village so it can serve as a gathering place for the local Assyrian community.</div><div class="pc-meta"><div class="pc-meta-item"><label>Category</label><span>Community Development</span></div><div class="pc-meta-item"><label>Completed</label><span>May 2026</span></div><div class="pc-meta-item"><label>Beneficiaries</label><span>35 families</span></div></div></div></div>
+<div class="project-card reveal d3" data-status="completed"><div class="pc-top completed"></div><div class="pc-gallery" data-gallery="khoyada"><button type="button" class="pc-cover" data-index="0" aria-label="Open photo and video gallery for Media Studio for Khoyada – Erbil (8 photos, 5 videos)"><img src="projects/khoyada/photo-1.jpg" alt="" loading="lazy" draggable="false" style="object-position: 50% 62%"><span class="pc-cover-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>8 photos · 5 videos</span></button><div class="pc-thumbs"><button type="button" class="pc-thumb" data-index="1" aria-label="View photo 2"><img src="projects/khoyada/photo-2-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="2" aria-label="View photo 3"><img src="projects/khoyada/photo-3-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="3" aria-label="View photo 4"><img src="projects/khoyada/photo-4-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb is-video" data-index="8" aria-label="Play video 1"><img src="projects/khoyada/video-1-thumb.jpg" alt="" loading="lazy" draggable="false"></button><button type="button" class="pc-thumb" data-index="4" aria-label="View all 13 photos and videos"><img src="projects/khoyada/photo-5-thumb.jpg" alt="" loading="lazy" draggable="false"><span class="pc-thumb-more">+8</span></button></div></div><div class="pc-body"><div class="pc-header"><div class="pc-title">Media Studio for Khoyada – Erbil</div><div class="pc-badge completed">Completed</div></div><div class="pc-location">Erbil, Iraq</div><div class="pc-description">Established a dedicated studio for the Khoyada Erbil Branch, giving young Assyrians a stable, professional space for media production, programs and community-focused activities.</div><div class="pc-meta"><div class="pc-meta-item"><label>Category</label><span>Community Development</span></div><div class="pc-meta-item"><label>Completed</label><span>June 2026</span></div><div class="pc-meta-item"><label>Beneficiaries</label><span>45–50 individuals</span></div></div></div></div>
+<div class="project-card reveal" data-status="completed"><div class="pc-top completed"></div><div class="pc-body"><div class="pc-header"><div class="pc-title">Projectors &amp; Screens for Nassibin High School</div><div class="pc-badge completed">Completed</div></div><div class="pc-location">Duhok, Iraq</div><div class="pc-description">Equipping the school hall and classrooms with projectors and projection screens so teachers can deliver clearer, more interactive lessons and host seminars and events.</div><div class="pc-meta"><div class="pc-meta-item"><label>Category</label><span>Education</span></div><div class="pc-meta-item"><label>Completed</label><span>November 2026</span></div><div class="pc-meta-item"><label>Beneficiaries</label><span>350 students, teachers &amp; staff</span></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project photos" aria-hidden="true">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Close photos">&times;</button>
+  <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <figure class="lb-figure"><img id="lbImg" alt="" draggable="false"><video id="lbVid" controls playsinline preload="metadata" controlslist="nodownload" disablepictureinpicture hidden></video><figcaption id="lbCap"></figcaption></figure>
+  <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+  <div class="lb-strip" id="lbStrip"></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:0.4rem;" data-i18n="footer-name">Assyrian Aid Relief Australia</div>
+      <div style="font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(91,163,212,0.55);margin-bottom:1.5rem;" data-i18n="footer-est">Est. Australia</div>
+      <p data-i18n="footer-desc">
+        An Australian-based charity supporting Assyrian families and communities through dignified, culturally grounded humanitarian action — in partnership with Assyrian Aid Society Iraq.
+      </p>
+      <a class="acnc-badge" href="https://www.acnc.gov.au/charity/charities" target="_blank" rel="noopener">
+        <img src="images/acnc-registered-charity.png" alt="ACNC Registered Charity" />
+        <span data-i18n="acnc-label">Registered with the ACNC</span>
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer-col1-h">Organisation</h4>
+      <ul>
+        <li><a href="#about" data-i18n="footer-about">About AAR</a></li>
+        <li><a href="#what-we-do" data-i18n="footer-work">What We Do</a></li>
+        
+        <li><a href="#partnership" data-i18n="footer-partner">Our Partnership</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer-col2-h">Get Involved</h4>
+      <ul>
+        <li><a href="https://www.paypal.com/donate/?hosted_button_id=SBBYFBHBCV8NQ" target="_blank" rel="noopener" data-i18n="footer-donate">Donate Now</a></li>
+        <li><a href="#volunteer" data-i18n="footer-volunteer">Volunteer</a></li>
+        <li><a href="#" data-i18n="footer-fundraise">Fundraise for AAR</a></li>
+        <li><a href="#" data-i18n="footer-contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="footer-copy">© 2025 Assyrian Aid Relief Australia. Registered with the Australian Charities and Not-for-profits Commission (ACNC).</p>
+    <p data-i18n="footer-partner-credit" style="display:flex;align-items:center;gap:0.5rem;"><img src="images/aasi-logo.png" alt="Assyrian Aid Society Iraq logo" style="width:1.6rem;height:1.6rem;object-fit:contain;background:#fff;border-radius:50%;padding:2px;">Working in partnership with Assyrian Aid Society Iraq.</p>
+  </div>
+</footer>
+
+<button type="button" class="to-top" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>
+/* ── SCROLL TO TOP ── */
+(function(){
+  var b=document.getElementById('toTop');
+  function upd(){b.classList.toggle('show',window.scrollY>600);}
+  window.addEventListener('scroll',upd,{passive:true});upd();
+  b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+
+<script>
+/* ── SPONSORS CAROUSEL ── */
+(function(){
+  var track=document.getElementById('sponsorTrack');
+  if(!track)return;
+  var items=[].slice.call(track.querySelectorAll('.sponsor-item'));
+  if(!items.length)return;
+  items.forEach(function(el,i){el.style.order=i;});
+  var lo=0,hi=items.length-1;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var SPEED=reduce?0:38; /* px per second */
+  var pos=0,vel=0,nudge=0,hover=false,focus=false,touchHold=0,visible=true,last=0,raf=0;
+  function gap(){return parseFloat(getComputedStyle(track).columnGap)||20;}
+  function stepW(){return items[0].getBoundingClientRect().width+gap();}
+  function sign(){return getComputedStyle(track).direction==='rtl'?1:-1;}
+  function frame(t){
+    raf=0;
+    var dt=last?Math.min((t-last)/1000,0.05):0; last=t;
+    var paused=hover||focus||Date.now()<touchHold;
+    vel+=((paused?0:SPEED)-vel)*Math.min(1,dt*7);
+    pos+=vel*dt;
+    if(Math.abs(nudge)>0.5){var d=nudge*Math.min(1,dt*8);pos+=d;nudge-=d;}else{pos+=nudge;nudge=0;}
+    var s=stepW();
+    if(s>0){
+      while(pos>=s){pos-=s;var f=items.shift();f.style.order=++hi;items.push(f);}
+      while(pos<0){pos+=s;var l=items.pop();l.style.order=--lo;items.unshift(l);}
+    }
+    track.style.setProperty('--sx',(sign()*pos)+'px');
+    if(visible)raf=requestAnimationFrame(frame);
+  }
+  function start(){if(!raf){last=0;raf=requestAnimationFrame(frame);}}
+  items.forEach(function(el){
+    el.addEventListener('mouseenter',function(){hover=true;});
+    el.addEventListener('mouseleave',function(){hover=false;});
+  });
+  track.addEventListener('focusin',function(){focus=true;});
+  track.addEventListener('focusout',function(){focus=false;});
+  track.addEventListener('touchstart',function(){touchHold=Date.now()+2500;},{passive:true});
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){visible=es[0].isIntersecting;if(visible)start();}).observe(track);
+  }
+  start();
+})();
+</script>
+
+<script>
+/* ── MOBILE NAV DRAWER ── */
+(function(){
+  var t=document.getElementById('navToggle'),b=document.getElementById('navBackdrop'),links=document.querySelector('.nav-links');
+  function set(open){document.body.classList.toggle('nav-open',open);t.setAttribute('aria-expanded',open?'true':'false');}
+  t.addEventListener('click',function(){set(!document.body.classList.contains('nav-open'));});
+  b.addEventListener('click',function(){set(false);});
+  links.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
+  window.addEventListener('resize',function(){if(window.innerWidth>900)set(false);});
+})();
+</script>
+
+<script>
+/* ── NAV SHRINK ON SCROLL ── */
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+  nav.style.padding = window.scrollY > 60 ? '0.8rem 4rem' : '1.2rem 4rem';
+});
+
+/* ── HERO PANEL TILT ── */
+(function() {
+  const panel = document.querySelector('.hero-right');
+  const inner = document.querySelector('.hero-right .hero-panel-inner');
+  if (!panel || !inner) return;
+
+  let targetX = 0, targetY = 0, targetScale = 1, currentX = 0, currentY = 0, currentScale = 1;
+  let rafId = null;
+
+  panel.addEventListener('mousemove', (e) => {
+    const rect = panel.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    // Max tilt: 14 degrees
+    targetX = ((e.clientY - cy) / (rect.height / 2)) * -12;
+    targetY = ((e.clientX - cx) / (rect.width / 2)) * 12;
+    // Scale up slightly based on distance from centre
+    const dist = Math.sqrt(Math.pow((e.clientX - cx) / (rect.width / 2), 2) + Math.pow((e.clientY - cy) / (rect.height / 2), 2));
+    targetScale = 1 + dist * 0.045;
+    if (!rafId) animate();
+  });
+
+  panel.addEventListener('mouseleave', () => {
+    targetX = 0; targetY = 0; targetScale = 1;
+    if (!rafId) animate();
+  });
+
+  function animate() {
+    currentX += (targetX - currentX) * 0.08;
+    currentY += (targetY - currentY) * 0.08;
+    currentScale += (targetScale - currentScale) * 0.08;
+    inner.style.transform = `perspective(900px) rotateX(${currentX}deg) rotateY(${currentY}deg) scale(${currentScale})`;
+    if (Math.abs(targetX - currentX) > 0.01 || Math.abs(targetY - currentY) > 0.01 || Math.abs(targetScale - currentScale) > 0.001) {
+      rafId = requestAnimationFrame(animate);
+    } else {
+      inner.style.transform = `perspective(900px) rotateX(${targetX}deg) rotateY(${targetY}deg) scale(${targetScale})`;
+      rafId = null;
+    }
+  }
+})();
+
+/* ── CALENDAR ── */
+(function() {
+  const EVENTS = [
+    {
+      year: 2025, month: 11, day: 6,
+      status: 'past',
+      title: 'Christmas Charity Fundraising Brunch',
+      venue: 'Assyrian Sports & Cultural Club, Fairfield Heights',
+      entry: '$15 per person',
+      date: '6 December 2025',
+      purpose: 'Support Assyrian schools in Duhok & Erbil Governorates with essential materials.',
+      highlights: ['Christmas-themed community brunch', 'Homemade sandwiches, sweets & festive food', 'Strong family-oriented turnout'],
+      outcome: 'Successfully funded school materials for Assyrians in northern Iraq.'
+    },
+    {
+      year: 2026, month: 3, day: 27,
+      status: 'upcoming',
+      title: 'Fundraiser Brunch — Surka Community Hall',
+      venue: 'Eden Gardens, Edensor Park',
+      entry: '$15 per person',
+      date: '27 April 2026',
+      purpose: 'Raise funds for the Surka Village Community Hall Furniture Project.',
+      highlights: ['Full event branding & flyers', 'Social media rollout', 'Sponsor coordination & community messaging'],
+      outcome: 'Major 2026 fundraiser — project announcement pending post-event.'
+    },
+    {
+      year: 2026, month: 10, day: 28,
+      status: 'upcoming',
+      title: 'Christmas Brunch',
+      venue: 'Assyrian Sports & Culture Club, 52–54 Stanbrook St, Fairfield Heights NSW 2165',
+      entry: '$15 per person',
+      date: 'Saturday 28 November 2026 · 10:00am',
+      purpose: 'This Christmas, help keep the Assyrian Aid Society Iraq mobile clinic on the road, bringing care and medicines to remote villages in Duhok.',
+      highlights: ['Live music by Wilson Eshay', 'Christmas brunch with the community', 'Supports care for 200–250 people in remote villages'],
+      outcome: 'Held in cooperation with Assyrian Aid Society Iraq.',
+      flyer: 'events/christmas-brunch-2026.jpg',
+      flyerAlt: 'Christmas Brunch flyer: Saturday 28 November 2026, 10am, Assyrian Sports & Culture Club, Fairfield Heights. $15 entry. Live music by Wilson Eshay.'
+    }
+  ];
+
+  let currentYear, currentMonth;
+  const today = new Date();
+
+  // Mark each event past/upcoming from its date (upcoming until the day is over)
+  EVENTS.forEach(e => { e.status = new Date(e.year, e.month, e.day + 1) <= today ? 'past' : 'upcoming'; });
+
+  // Always open on the current month
+  currentYear = today.getFullYear(); currentMonth = today.getMonth();
+
+  const label = document.getElementById('calMonthLabel');
+  const grid  = document.getElementById('calGrid');
+  const prev  = document.getElementById('calPrev');
+  const next  = document.getElementById('calNext');
+  if (!grid) return;
+
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  function render() {
+    label.textContent = MONTHS[currentMonth] + ' ' + currentYear;
+    grid.innerHTML = '';
+
+    const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    const daysInPrev  = new Date(currentYear, currentMonth, 0).getDate();
+
+    const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;
+
+    for (let i = 0; i < totalCells; i++) {
+      const cell = document.createElement('div');
+      cell.className = 'cal-cell';
+
+      let day, yr = currentYear, mo = currentMonth;
+      if (i < firstDay) {
+        day = daysInPrev - firstDay + i + 1;
+        cell.classList.add('other-month');
+        mo = currentMonth - 1; if (mo < 0) { mo = 11; yr--; }
+      } else if (i >= firstDay + daysInMonth) {
+        day = i - firstDay - daysInMonth + 1;
+        cell.classList.add('other-month');
+        mo = currentMonth + 1; if (mo > 11) { mo = 0; yr++; }
+      } else {
+        day = i - firstDay + 1;
+        if (yr === today.getFullYear() && mo === today.getMonth() && day === today.getDate())
+          cell.classList.add('today');
+      }
+
+      const numEl = document.createElement('div');
+      numEl.className = 'cal-cell-num';
+      numEl.textContent = day;
+      cell.appendChild(numEl);
+
+      const evs = EVENTS.filter(e => e.year === yr && e.month === mo && e.day === day);
+      evs.forEach(ev => {
+        cell.classList.add('has-event');
+        const chip = document.createElement('div');
+        chip.className = 'cal-event-chip ' + ev.status;
+        chip.textContent = ev.title;
+        cell.appendChild(chip);
+        cell.addEventListener('click', () => openModal(ev));
+      });
+
+      grid.appendChild(cell);
+    }
+  }
+
+  prev.addEventListener('click', () => {
+    currentMonth--; if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+    render();
+  });
+  next.addEventListener('click', () => {
+    currentMonth++; if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+    render();
+  });
+
+  render();
+
+  /* Modal */
+  const overlay = document.getElementById('eventModal');
+  const emClose = document.getElementById('emClose');
+  emClose.addEventListener('click', () => overlay.classList.remove('open'));
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+
+  function openModal(ev) {
+    document.getElementById('emStripe').className = 'em-stripe ' + ev.status;
+    document.getElementById('emType').className = 'em-type ' + ev.status;
+    document.getElementById('emType').textContent = ev.status === 'past' ? 'Past Event' : 'Upcoming Event';
+    document.getElementById('emTitle').textContent = ev.title;
+    document.getElementById('emDetails').innerHTML =
+      '<div class="em-detail"><label>Date</label><span>' + ev.date + '</span></div>' +
+      '<div class="em-detail"><label>Venue</label><span>' + ev.venue + '</span></div>' +
+      '<div class="em-detail"><label>Entry</label><span>' + ev.entry + '</span></div>';
+    document.getElementById('emDesc').textContent = ev.purpose;
+    document.getElementById('emHighlights').innerHTML =
+      '<h4>Highlights</h4><ul>' + ev.highlights.map(h => '<li>' + h + '</li>').join('') + '</ul>';
+    document.getElementById('emOutcome').textContent = ev.outcome;
+    const fl = document.getElementById('emFlyer');
+    if (ev.flyer) {
+      fl.href = ev.flyer;
+      document.getElementById('emFlyerImg').src = ev.flyer;
+      document.getElementById('emFlyerImg').alt = ev.flyerAlt || ev.title;
+      fl.hidden = false;
+    } else {
+      fl.hidden = true;
+    }
+    overlay.querySelector('.event-modal-box').scrollTop = 0;
+    overlay.classList.add('open');
+  }
+})();
+
+/* ── PROJECT FILTERS ── */
+(function() {
+  const btns  = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      cards.forEach(card => {
+        const match = f === 'all' || card.dataset.status === f;
+        card.classList.toggle('hidden', !match);
+      });
+    });
+  });
+})();
+
+/* ── TIMELINE DRAG SCROLL ── */
+(function() {
+  const el = document.querySelector('.timeline-outer');
+  if (!el) return;
+  let isDown = false, startX, scrollLeft;
+  el.addEventListener('mousedown', e => { isDown = true; startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft; });
+  el.addEventListener('mouseleave', () => isDown = false);
+  el.addEventListener('mouseup', () => isDown = false);
+  el.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    el.scrollLeft = scrollLeft - (e.pageX - el.offsetLeft - startX);
+  });
+})();
+
+
+(function() {
+  const toggle = document.getElementById('heroThemeToggle');
+  const panel  = document.querySelector('.hero-right');
+  if (!toggle || !panel) return;
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isLight = panel.dataset.theme === 'light';
+    panel.dataset.theme = isLight ? 'dark' : 'light';
+  });
+})();
+
+
+/* ── HERO RIPPLE ON CLICK ── */
+(function() {
+  const panel = document.querySelector('.hero-right');
+  if (!panel) return;
+
+  panel.addEventListener('click', (e) => {
+    const rect = panel.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    [null, 'r2', 'r3'].forEach((cls) => {
+      const ripple = document.createElement('div');
+      ripple.className = 'hero-ripple' + (cls ? ' ' + cls : '');
+      ripple.style.left = x + 'px';
+      ripple.style.top  = y + 'px';
+      panel.appendChild(ripple);
+      ripple.addEventListener('animationend', () => ripple.remove());
+    });
+  });
+})();
+
+/* ── SCROLL REVEAL ── */
+(function() {
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .mission-block, .section-label');
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealEls.forEach(el => io.observe(el));
+})();
+
+/* ── STAT COUNTERS ── */
+(function() {
+  const stats = document.querySelectorAll('.stat-num[data-target]');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        let start = 0;
+        const duration = 1400;
+        const step = 16;
+        const increment = target / (duration / step);
+
+        const timer = setInterval(() => {
+          start += increment;
+          if (start >= target) {
+            el.textContent = target + suffix;
+            clearInterval(timer);
+          } else {
+            el.textContent = Math.floor(start) + suffix;
+          }
+        }, step);
+
+        io.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  stats.forEach(el => io.observe(el));
+})();
+
+/* ── ISHTAR STAR TOOLTIP ── */
+(function() {
+  const zones = {
+    outer: {
+      title: 'The Eight-Pointed Star',
+      body: 'The outer star represents the eight aspects of Ishtar — goddess of love, war, and the planet Venus. To Assyrians, this star is an ancient emblem of divine power, identity, and civilisational pride stretching back over 5,000 years.'
+    },
+    inner: {
+      title: 'The Inner Flame',
+      body: 'The smaller star within symbolises the inner fire of the Assyrian people — a resilience that has survived empire, exile, and persecution. It echoes the flame that was never extinguished, carried from Mesopotamia to every corner of the world.'
+    },
+    centre: {
+      title: 'The Heart of Ishtar',
+      body: 'The golden centre is the eye of the star — the light of Venus rising. In ancient Assyrian culture, Ishtar (Inanna) was worshipped as the morning and evening star, a guide for travellers and a symbol of hope through darkness.'
+    }
+  };
+
+  const tooltip = document.getElementById('ishtarTooltip');
+  const title   = document.getElementById('ishtarTooltipTitle');
+  const body    = document.getElementById('ishtarTooltipBody');
+  if (!tooltip) return;
+
+  let hideTimer = null;
+
+  document.querySelectorAll('.ishtar-zone').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      clearTimeout(hideTimer);
+      const z = zones[el.getAttribute('data-zone')];
+      if (!z) return;
+      title.textContent = z.title;
+      body.textContent  = z.body;
+      tooltip.classList.add('visible');
+    });
+    el.addEventListener('mouseleave', () => {
+      hideTimer = setTimeout(() => tooltip.classList.remove('visible'), 180);
+    });
+  });
+
+  tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+  tooltip.addEventListener('mouseleave', () => {
+    hideTimer = setTimeout(() => tooltip.classList.remove('visible'), 180);
+  });
+})();
+</script>
+
+<script>
+/* ── PROJECT PHOTO GALLERIES ── */
+(function(){
+  var GALLERIES = {
+    dooreh: [
+      ['projects/dooreh-1.jpg','Generator with its engine compartment opened for servicing'],
+      ['projects/dooreh-2.jpg','The generator shelter beside the community hall on the village road'],
+      ['projects/dooreh-3.jpg','The fenced generator enclosure'],
+      ['projects/dooreh-4.jpg','The generator under its shelter next to the hall'],
+      ['projects/dooreh-5.jpg','Control panel and engine bay during maintenance'],
+      ['projects/dooreh-6.jpg','Control panel, engine and battery inside the generator']
+    ],
+    schools: (function(){
+      var a=[
+        ['projects/schools/photo-1.jpg','Supplies labelled with the support of Assyrian Aid Relief Australia and Assyrian Aid Society Iraq'],
+        ['projects/schools/photo-2.jpg','A4 paper and whiteboard markers ready for distribution']
+      ];
+      for(var i=3;i<=17;i++) a.push(['projects/schools/photo-'+i+'.jpg','A4 paper and whiteboard markers delivered to an Assyrian school in Duhok or Erbil']);
+      return a;
+    })(),
+    brunch: [
+      ['events/christmas-brunch-2026.jpg','Christmas Brunch — Saturday 28 November 2026, 10:00am, Assyrian Sports & Culture Club, Fairfield Heights. $15 entry.']
+    ],
+    clinic: [
+      ['projects/clinic/photo-1.jpg','Patients waiting to see the mobile clinic doctor'],
+      ['projects/clinic/photo-2.jpg','A mobile clinic doctor examining a young patient'],
+      ['projects/clinic/photo-3.jpg','Medicines being dispensed to a patient'],
+      ['projects/clinic/photo-4.jpg','A consultation with the mobile clinic doctor']
+    ],
+    sorka: [
+      ['projects/sorka/photo-1.jpg','The Sorka Village community hall with its new seating'],
+      ['projects/sorka/photo-2.jpg','New sofa seating lining the hall'],
+      ['projects/sorka/photo-3.jpg','Close-up of the new seating'],
+      ['projects/sorka/photo-4.jpg','Stacks of new chairs for community events'],
+      ['projects/sorka/photo-5.jpg','New folding tables ready for use'],
+      ['projects/sorka/video-1.mp4','Video: a walk through the furnished hall','projects/sorka/video-1-thumb.jpg']
+    ],
+    khoyada: [
+      ['projects/khoyada/photo-1.jpg','The finished studio set, with seating and the Assyrian flag'],
+      ['projects/khoyada/photo-2.jpg','Feature wall with accent lighting installed'],
+      ['projects/khoyada/photo-3.jpg','Installing the track lighting'],
+      ['projects/khoyada/photo-4.jpg','Shelving and a lighting stand in the studio'],
+      ['projects/khoyada/photo-5.jpg','Softbox light and camera tripod set up'],
+      ['projects/khoyada/photo-6.jpg','The studio space during the fit-out'],
+      ['projects/khoyada/photo-7.jpg','Work underway during the fit-out'],
+      ['projects/khoyada/photo-8.jpg','A room at the Khoyada Erbil branch'],
+      ['projects/khoyada/video-1.mp4','Video: the studio lighting and camera set-up','projects/khoyada/video-1-thumb.jpg'],
+      ['projects/khoyada/video-2.mp4','Video: walking through the branch during the fit-out','projects/khoyada/video-2-thumb.jpg'],
+      ['projects/khoyada/video-3.mp4','Video: a room at the branch','projects/khoyada/video-3-thumb.jpg'],
+      ['projects/khoyada/video-4.mp4','Video: installing the track lighting','projects/khoyada/video-4-thumb.jpg'],
+      ['projects/khoyada/video-5.mp4','Video: the finished feature wall and lighting','projects/khoyada/video-5-thumb.jpg']
+    ]
+  };
+  var lb=document.getElementById('lightbox'); if(!lb) return;
+  var img=document.getElementById('lbImg'), vid=document.getElementById('lbVid'), cap=document.getElementById('lbCap'), strip=document.getElementById('lbStrip');
+  function isVid(p){ return /\.mp4$/i.test(p[0]); }
+  function thumbOf(p){ return p[2] || p[0].replace('.jpg','-thumb.jpg'); }
+  vid.addEventListener('contextmenu',function(e){e.preventDefault();});
+  var list=[], idx=0, lastFocus=null;
+  function show(i){
+    idx=(i+list.length)%list.length;
+    img.style.opacity='0';
+    var p=list[idx];
+    vid.pause();
+    if(isVid(p)){
+      img.hidden=true; vid.hidden=false;
+      vid.poster=thumbOf(p); vid.src=p[0]; vid.setAttribute('aria-label',p[1]);
+    } else {
+      vid.hidden=true; vid.removeAttribute('src'); vid.load(); img.hidden=false;
+      var pre=new Image(); pre.onload=pre.onerror=function(){ img.src=p[0]; img.alt=p[1]; img.style.opacity='1'; }; pre.src=p[0];
+    }
+    cap.innerHTML='<b>'+(idx+1)+' / '+list.length+'</b>'+p[1];
+    [].forEach.call(strip.children,function(b,j){b.classList.toggle('active',j===idx);});
+  }
+  function open(name,i){
+    list=GALLERIES[name]||[]; if(!list.length) return;
+    strip.innerHTML='';
+    list.forEach(function(p,j){
+      var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label',(isVid(p)?'Video ':'Photo ')+(j+1));
+      if(isVid(p)) b.classList.add('is-video');
+      b.innerHTML='<img src="'+thumbOf(p)+'" alt="" draggable="false">';
+      b.addEventListener('click',function(){show(j);}); strip.appendChild(b);
+    });
+    lastFocus=document.activeElement;
+    lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+    show(i||0);
+    document.getElementById('lbClose').focus();
+  }
+  function close(){
+    vid.pause();
+    lb.classList.remove('open'); lb.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    if(lastFocus) lastFocus.focus();
+  }
+  document.querySelectorAll('[data-gallery]').forEach(function(g){
+    g.addEventListener('click',function(e){
+      var b=e.target.closest('[data-index]'); if(!b) return;
+      open(g.getAttribute('data-gallery'),parseInt(b.getAttribute('data-index'),10));
+    });
+  });
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbPrev').addEventListener('click',function(){show(idx-1);});
+  document.getElementById('lbNext').addEventListener('click',function(){show(idx+1);});
+  lb.addEventListener('click',function(e){ if(e.target===lb||e.target.classList.contains('lb-figure')) close(); });
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') close();
+    else if(e.key==='ArrowRight') show(idx+(document.documentElement.dir==='rtl'?-1:1));
+    else if(e.key==='ArrowLeft') show(idx+(document.documentElement.dir==='rtl'?1:-1));
+  });
+  var sx=null;
+  lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){ if(sx===null) return; var dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>40) show(idx+(dx<0?1:-1)); sx=null; });
+})();
+</script>
+</body>
+</html>
+
+<style id="__om-edit-overrides">
+#home :is(h1,h2,h3,h4,h5,h6) >span { font-weight: 400 !important }
+</style>
