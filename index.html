@@ -2572,15 +2572,8 @@
 
       <!-- Upcoming activities -->
       <div class="hero-upcoming">
-        <div class="hero-upcoming-item hero-featured" data-gallery="brunch">
-          <button type="button" class="hero-flyer" data-index="0" aria-label="View the Christmas Brunch flyer"><img src="events/christmas-brunch-2026.jpg" alt="" draggable="false"><span class="hero-flyer-zoom">View flyer</span></button>
-          <a href="#events" class="hero-featured-text">
-            <span class="hero-upcoming-tag" data-i18n="hero-up1-tag">Upcoming Fundraiser</span>
-            <span class="hero-upcoming-title" data-i18n="hero-up1-title">Christmas Brunch — Mobile Clinic Fundraiser</span>
-            <span class="hero-upcoming-date" data-i18n="hero-up1-date">Saturday 28 November 2026 · 10:00am · Assyrian Sports &amp; Culture Club, Fairfield Heights</span>
-            <span class="hero-featured-cta">$15 entry · Live music by Wilson Eshay &rarr;</span>
-          </a>
-        </div>
+        <!-- Filled automatically from the events calendar: shows the next upcoming event, or a "coming soon" note when there is none -->
+        <div class="hero-upcoming-item" id="heroFeatured" data-gallery="featured"></div>
         <div class="hero-upcoming-item hero-project" data-gallery="clinic">
           <a href="#projects" class="hero-project-text">
             <span class="hero-upcoming-tag" data-i18n="hero-up2-tag">Upcoming Project</span>
@@ -3320,6 +3313,10 @@ window.addEventListener('scroll', () => {
       purpose: 'This Christmas, help keep the Assyrian Aid Society Iraq mobile clinic on the road, bringing care and medicines to remote villages in Duhok.',
       highlights: ['Live music by Wilson Eshay', 'Christmas brunch with the community', 'Supports care for 200–250 people in remote villages'],
       outcome: 'Held in cooperation with Assyrian Aid Society Iraq.',
+      heroTag: 'Upcoming Fundraiser',
+      heroTitle: 'Christmas Brunch — Mobile Clinic Fundraiser',
+      heroLine: 'Saturday 28 November 2026 · 10:00am · Assyrian Sports & Culture Club, Fairfield Heights',
+      heroCta: '$15 entry · Live music by Wilson Eshay',
       flyer: 'events/christmas-brunch-2026.jpg',
       flyerAlt: 'Christmas Brunch flyer: Saturday 28 November 2026, 10am, Assyrian Sports & Culture Club, Fairfield Heights. $15 entry. Live music by Wilson Eshay.'
     }
@@ -3330,6 +3327,42 @@ window.addEventListener('scroll', () => {
 
   // Mark each event past/upcoming from its date (upcoming until the day is over)
   EVENTS.forEach(e => { e.status = new Date(e.year, e.month, e.day + 1) <= today ? 'past' : 'upcoming'; });
+
+  // Front-page card: the next upcoming event, or a "coming soon" note
+  (function renderHeroEvent() {
+    const box = document.getElementById('heroFeatured');
+    if (!box) return;
+    const next = EVENTS.filter(e => e.status === 'upcoming')
+      .sort((a, b) => new Date(a.year, a.month, a.day) - new Date(b.year, b.month, b.day))[0];
+    const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+    box.innerHTML = '';
+    if (!next) {
+      box.classList.remove('hero-featured');
+      const a = el('a', 'hero-featured-text'); a.href = '#events';
+      a.append(el('span', 'hero-upcoming-tag', 'Events'),
+               el('span', 'hero-upcoming-title', 'More events coming soon'),
+               el('span', 'hero-upcoming-date', 'New fundraisers and community gatherings are on the way.'),
+               el('span', 'hero-featured-cta', 'See our past events \u2192'));
+      box.appendChild(a);
+      return;
+    }
+    box.classList.add('hero-featured');
+    if (next.flyer) {
+      window.AAR_featured = [[next.flyer, next.flyerAlt || next.title]];
+      const b = el('button', 'hero-flyer'); b.type = 'button'; b.dataset.index = '0';
+      b.setAttribute('aria-label', 'View the ' + next.title + ' flyer');
+      const im = el('img'); im.src = next.flyer; im.alt = ''; im.draggable = false;
+      b.append(im, el('span', 'hero-flyer-zoom', 'View flyer'));
+      box.appendChild(b);
+    }
+    const a = el('a', 'hero-featured-text'); a.href = '#events';
+    a.append(el('span', 'hero-upcoming-tag', next.heroTag || 'Upcoming Event'),
+             el('span', 'hero-upcoming-title', next.heroTitle || next.title),
+             el('span', 'hero-upcoming-date', next.heroLine || (next.date + ' \u00b7 ' + next.venue)));
+    if (next.heroCta) a.appendChild(el('span', 'hero-featured-cta', next.heroCta + ' \u2192'));
+    a.addEventListener('click', () => setTimeout(() => openModal(next), 450));
+    box.appendChild(a);
+  })();
 
   // Always open on the current month
   currentYear = today.getFullYear(); currentMonth = today.getMonth();
@@ -3613,9 +3646,7 @@ window.addEventListener('scroll', () => {
       for(var i=3;i<=17;i++) a.push(['projects/schools/photo-'+i+'.jpg','A4 paper and whiteboard markers delivered to an Assyrian school in Duhok or Erbil']);
       return a;
     })(),
-    brunch: [
-      ['events/christmas-brunch-2026.jpg','Christmas Brunch — Saturday 28 November 2026, 10:00am, Assyrian Sports & Culture Club, Fairfield Heights. $15 entry.']
-    ],
+    featured: window.AAR_featured || [],
     clinic: [
       ['projects/clinic/photo-1.jpg','Patients waiting to see the mobile clinic doctor'],
       ['projects/clinic/photo-2.jpg','A mobile clinic doctor examining a young patient'],
