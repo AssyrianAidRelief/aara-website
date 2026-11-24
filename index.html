@@ -3,6 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-ML3NRGDV');</script>
+<!-- End Google Tag Manager -->
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zinflhc5r9");
+</script>
+<!-- End Microsoft Clarity -->
 <title>Assyrian Aid Relief Australia</title>
 <meta name="description" content="Assyrian Aid Relief Australia is a registered Australian charity supporting Assyrian families and communities in Iraq through education, healthcare, infrastructure and cultural preservation projects.">
 <link rel="icon" type="image/png" href="images/logo.png">
@@ -1757,6 +1773,7 @@
     align-items: center;
   }
 
+  .footer-privacy { max-width: 26rem; font-size: 0.7rem !important; }
   .footer-bottom p {
     font-size: 0.78rem;
     color: rgba(255,255,255,0.28);
@@ -2500,6 +2517,9 @@
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML3NRGDV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- NAVIGATION -->
 <nav>
@@ -3157,6 +3177,7 @@
   <div class="footer-bottom">
     <p data-i18n="footer-copy">© 2025 Assyrian Aid Relief Australia. Registered with the Australian Charities and Not-for-profits Commission (ACNC).</p>
     <p data-i18n="footer-partner-credit" style="display:flex;align-items:center;gap:0.5rem;"><img src="images/aasi-logo.png" alt="Assyrian Aid Society Iraq logo" style="width:1.6rem;height:1.6rem;object-fit:contain;background:#fff;border-radius:50%;padding:2px;">Working in partnership with Assyrian Aid Society Iraq.</p>
+    <p class="footer-privacy">We use Google Analytics and Microsoft Clarity to count visits and see how the site is used, so we can improve it. They set cookies but don&rsquo;t tell us who you are, and anything typed into forms is hidden from them.</p>
   </div>
 </footer>
 
@@ -3755,6 +3776,31 @@ window.addEventListener('scroll', () => {
   var sx=null;
   lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
   lb.addEventListener('touchend',function(e){ if(sx===null) return; var dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>40) show(idx+(dx<0?1:-1)); sx=null; });
+})();
+</script>
+
+<script>
+/* ── ANALYTICS EVENTS (sent to Google Tag Manager's dataLayer) ── */
+(function(){
+  window.dataLayer = window.dataLayer || [];
+  function track(name, params){ var o = {event: name}; for (var k in (params||{})) o[k] = params[k]; window.dataLayer.push(o); if (window.clarity) window.clarity('event', name); }
+  function where(el){ return el.closest('nav') ? 'menu' : el.closest('footer') ? 'footer' : el.closest('.hero') ? 'home' : 'page'; }
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var cal = t.closest('.cal-cell.has-event');
+    if (cal) { var c = cal.querySelector('.cal-event-chip'); return track('event_details_view', {event_title: c ? c.textContent : ''}); }
+    var a = t.closest('a,button'); if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('paypal.com/donate') > -1) return track('donate_click', {link_location: where(a)});
+    if (a.closest('.hero-flyer')) return track('flyer_view');
+    var g = a.closest('[data-gallery]');
+    if (g && a.hasAttribute('data-index')) return track('gallery_open', {gallery: g.getAttribute('data-gallery')});
+    if (/^https?:/.test(href) && href.indexOf(location.hostname) === -1) return track('outbound_click', {link_url: href});
+  }, true);
+  var form = document.querySelector('.vf-form');
+  if (form) form.addEventListener('submit', function(){ track('volunteer_form_submit'); });
+  var vid = document.getElementById('lbVid');
+  if (vid) vid.addEventListener('play', function(){ track('video_play', {video: (vid.getAttribute('src')||'').split('/').slice(-2).join('/')}); });
 })();
 </script>
 </body>
