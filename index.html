@@ -3371,7 +3371,7 @@ window.addEventListener('scroll', () => {
     }
     box.classList.add('hero-featured');
     if (next.flyer) {
-      window.AAR_featured = [[next.flyer, next.flyerAlt || next.title]];
+      window.AAR_featured = [[next.flyer, next.flyerAlt || next.title, next.flyer]];
       const b = el('button', 'hero-flyer'); b.type = 'button'; b.dataset.index = '0';
       b.setAttribute('aria-label', 'View the ' + next.title + ' flyer');
       const im = el('img'); im.src = next.flyer; im.alt = ''; im.draggable = false;
@@ -3741,10 +3741,14 @@ window.addEventListener('scroll', () => {
   function open(name,i){
     list=GALLERIES[name]||[]; if(!list.length) return;
     strip.innerHTML='';
+    var single = list.length < 2;
+    strip.style.display = single ? 'none' : '';
+    document.getElementById('lbPrev').style.visibility = document.getElementById('lbNext').style.visibility = single ? 'hidden' : '';
     list.forEach(function(p,j){
       var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label',(isVid(p)?'Video ':'Photo ')+(j+1));
       if(isVid(p)) b.classList.add('is-video');
-      b.innerHTML='<img src="'+thumbOf(p)+'" alt="" draggable="false">';
+      var ti=document.createElement('img'); ti.alt=''; ti.draggable=false; ti.src=thumbOf(p);
+      ti.onerror=function(){ this.onerror=null; this.src=p[2]||p[0]; }; b.appendChild(ti);
       b.addEventListener('click',function(){show(j);}); strip.appendChild(b);
     });
     lastFocus=document.activeElement;
