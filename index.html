@@ -2406,6 +2406,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     opacity: 0; pointer-events: none; transition: opacity 0.3s; z-index: 115;
   }
   body.nav-open .nav-backdrop { opacity: 1; pointer-events: all; }
+  /* keep the open menu above its dimmed backdrop */
+  body.nav-open nav { z-index: 130; }
 
   @media (max-width: 900px) {
     nav { padding: 0.85rem 1.5rem; }
